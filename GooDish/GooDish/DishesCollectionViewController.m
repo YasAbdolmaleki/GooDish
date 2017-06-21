@@ -9,8 +9,18 @@
 #import "DishesCollectionViewController.h"
 
 #import "DishCollectionViewCell.h"
+#import "Dish.h"
+#import "Review.h"
+#import "Restaurant.h"
 
 @interface DishesCollectionViewController ()
+
+@property (nonatomic, strong) NSArray* dishes;
+@property (nonatomic, strong) Dish* currentDish;
+@property (nonatomic, strong) Restaurant* restaurant;
+@property (nonatomic, strong) Review* dishReview;
+
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -19,36 +29,52 @@
 static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
+    [self setupView];
+    
+    [self fetchDishes:nil];
+    
+}
+
+- (void)setupView {
+    [self pullToRefresh];
     
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([DishCollectionViewCell class]) bundle:nil]
           forCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class])];
-    
-    
-    # warning testing
-//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"dishes" ofType:@"json"];
-//    NSData *data = [NSData dataWithContentsOfFile:filePath];
-//    NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-//
-//    if(NSClassFromString(@"NSJSONSerialization"))
-//    {
-//        NSError *error = nil;
-//        id object = [NSJSONSerialization
-//                     JSONObjectWithData:data
-//                     options:0
-//                     error:&error];
-//        
-//        if(error) { /* JSON was malformed, act appropriately here */ }
-//
-//        if([object isKindOfClass:[NSDictionary class]])
-//        {
-//            NSDictionary *results = object;
-//        }
-//    }
 }
 
+- (void)pullToRefresh {
+    self.refreshControl = [[UIRefreshControl alloc]init];
+    [self.collectionView addSubview:self.refreshControl];
+    [self.refreshControl addTarget:self action:@selector(refreshCollectionView) forControlEvents:UIControlEventValueChanged];
+}
+
+- (void)refreshCollectionView {
+    [self fetchDishes:nil];
+    [self.refreshControl endRefreshing];
+    [self.collectionView reloadData];
+}
+
+- (void)fetchDishes:(NSString *)searchedDish {
+    
+    NSString *dishesJsonRaw = [[NSBundle mainBundle] pathForResource:@"dishes" ofType:@"json"];
+    NSData *dishesData = [NSData dataWithContentsOfFile:dishesJsonRaw];
+    
+    NSDictionary *dishesJsonParsed = [NSJSONSerialization JSONObjectWithData:dishesData options:kNilOptions error:nil];
+    NSArray *dishes = [[NSArray alloc] initWithArray:[dishesJsonParsed objectForKey:@"dishes"]];
+    
+    self.dishes = dishes;
+}
+
+- (UIImage *)fetchImageURL:(NSString *)url {
+    NSURL *imageURL = [NSURL URLWithString:url];
+    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+    return [UIImage imageWithData:imageData];
+}
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -58,12 +84,27 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 5;
+    return [self.dishes count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 
+    self.currentDish = [[Dish alloc] initWithDish:self.dishes[indexPath.row]];
+    self.restaurant = [[Restaurant alloc] initWithRestaurant:self.currentDish.restaurant];
+    self.dishReview = [[Review alloc] initWithReview:self.currentDish.review];
+    
     DishCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class]) forIndexPath:indexPath];
+    
+    cell.layer.borderWidth=1.0f;
+    cell.layer.borderColor=[UIColor grayColor].CGColor;
+    
+    cell.dishImage.image = [self fetchImageURL:self.currentDish.imageUrl];
+    cell.dishNameLabel.text = self.currentDish.name;
+    cell.restaurantLabel.text = self.restaurant.restaurantName;
+    cell.restaurantDistanceLabel.text = self.restaurant.restaurantDistance;
+    cell.dishPriceLabel.text = self.currentDish.price;
+    cell.starRatingImage.image = [self fetchImageURL:@"https://i.stack.imgur.com/sGnY4.jpg"]; //need to do some calculation to get the image self.dishReview.ratings
+    cell.numberOfReviewsLabel.text = self.dishReview.numberOfRewievs;
     
     return cell;
 }
@@ -74,7 +115,6 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 #pragma mark <UICollectionViewDelegate>
-
 
 /*
 // Uncomment this method to specify if the specified item should be selected
