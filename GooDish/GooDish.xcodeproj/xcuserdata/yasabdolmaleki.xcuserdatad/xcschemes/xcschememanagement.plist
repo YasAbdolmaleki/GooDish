@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GooDish.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0FE5E90A1EF9FB7500E09EC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FE5E9231EF9FB7500E09EC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FE5E92E1EF9FB7500E09EC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

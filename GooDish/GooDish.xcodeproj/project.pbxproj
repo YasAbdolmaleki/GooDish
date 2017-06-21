@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FE5E9101EF9FB7500E09EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E90F1EF9FB7500E09EC9 /* main.m */; };
+		0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9121EF9FB7500E09EC9 /* AppDelegate.m */; };
+		0FE5E9161EF9FB7500E09EC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9151EF9FB7500E09EC9 /* ViewController.m */; };
+		0FE5E9191EF9FB7500E09EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9171EF9FB7500E09EC9 /* Main.storyboard */; };
+		0FE5E91B1EF9FB7500E09EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E91A1EF9FB7500E09EC9 /* Assets.xcassets */; };
+		0FE5E91E1EF9FB7500E09EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E91C1EF9FB7500E09EC9 /* LaunchScreen.storyboard */; };
+		0FE5E9291EF9FB7500E09EC9 /* GooDishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9281EF9FB7500E09EC9 /* GooDishTests.m */; };
+		0FE5E9341EF9FB7500E09EC9 /* GooDishUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9331EF9FB7500E09EC9 /* GooDishUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FE5E9251EF9FB7500E09EC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FE5E9031EF9FB7500E09EC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FE5E90A1EF9FB7500E09EC9;
+			remoteInfo = GooDish;
+		};
+		0FE5E9301EF9FB7500E09EC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FE5E9031EF9FB7500E09EC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FE5E90A1EF9FB7500E09EC9;
+			remoteInfo = GooDish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FE5E90B1EF9FB7500E09EC9 /* GooDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE5E90F1EF9FB7500E09EC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FE5E9111EF9FB7500E09EC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FE5E9121EF9FB7500E09EC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FE5E9141EF9FB7500E09EC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0FE5E9151EF9FB7500E09EC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FE5E9181EF9FB7500E09EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FE5E91A1EF9FB7500E09EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FE5E91D1EF9FB7500E09EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FE5E91F1EF9FB7500E09EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE5E9241EF9FB7500E09EC9 /* GooDishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooDishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE5E9281EF9FB7500E09EC9 /* GooDishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooDishTests.m; sourceTree = "<group>"; };
+		0FE5E92A1EF9FB7500E09EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE5E92F1EF9FB7500E09EC9 /* GooDishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooDishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE5E9331EF9FB7500E09EC9 /* GooDishUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooDishUITests.m; sourceTree = "<group>"; };
+		0FE5E9351EF9FB7500E09EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FE5E9081EF9FB7500E09EC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE5E9211EF9FB7500E09EC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE5E92C1EF9FB7500E09EC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FE5E9021EF9FB7500E09EC9 = {
+			isa = PBXGroup;
+			children = (
+				0FE5E90D1EF9FB7500E09EC9 /* GooDish */,
+				0FE5E9271EF9FB7500E09EC9 /* GooDishTests */,
+				0FE5E9321EF9FB7500E09EC9 /* GooDishUITests */,
+				0FE5E90C1EF9FB7500E09EC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FE5E90C1EF9FB7500E09EC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FE5E90B1EF9FB7500E09EC9 /* GooDish.app */,
+				0FE5E9241EF9FB7500E09EC9 /* GooDishTests.xctest */,
+				0FE5E92F1EF9FB7500E09EC9 /* GooDishUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FE5E90D1EF9FB7500E09EC9 /* GooDish */ = {
+			isa = PBXGroup;
+			children = (
+				0FE5E9111EF9FB7500E09EC9 /* AppDelegate.h */,
+				0FE5E9121EF9FB7500E09EC9 /* AppDelegate.m */,
+				0FE5E9141EF9FB7500E09EC9 /* ViewController.h */,
+				0FE5E9151EF9FB7500E09EC9 /* ViewController.m */,
+				0FE5E9171EF9FB7500E09EC9 /* Main.storyboard */,
+				0FE5E91A1EF9FB7500E09EC9 /* Assets.xcassets */,
+				0FE5E91C1EF9FB7500E09EC9 /* LaunchScreen.storyboard */,
+				0FE5E91F1EF9FB7500E09EC9 /* Info.plist */,
+				0FE5E90E1EF9FB7500E09EC9 /* Supporting Files */,
+			);
+			path = GooDish;
+			sourceTree = "<group>";
+		};
+		0FE5E90E1EF9FB7500E09EC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FE5E90F1EF9FB7500E09EC9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FE5E9271EF9FB7500E09EC9 /* GooDishTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FE5E9281EF9FB7500E09EC9 /* GooDishTests.m */,
+				0FE5E92A1EF9FB7500E09EC9 /* Info.plist */,
+			);
+			path = GooDishTests;
+			sourceTree = "<group>";
+		};
+		0FE5E9321EF9FB7500E09EC9 /* GooDishUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0FE5E9331EF9FB7500E09EC9 /* GooDishUITests.m */,
+				0FE5E9351EF9FB7500E09EC9 /* Info.plist */,
+			);
+			path = GooDishUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FE5E90A1EF9FB7500E09EC9 /* GooDish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE5E9381EF9FB7500E09EC9 /* Build configuration list for PBXNativeTarget "GooDish" */;
+			buildPhases = (
+				0FE5E9071EF9FB7500E09EC9 /* Sources */,
+				0FE5E9081EF9FB7500E09EC9 /* Frameworks */,
+				0FE5E9091EF9FB7500E09EC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooDish;
+			productName = GooDish;
+			productReference = 0FE5E90B1EF9FB7500E09EC9 /* GooDish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FE5E9231EF9FB7500E09EC9 /* GooDishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE5E93B1EF9FB7500E09EC9 /* Build configuration list for PBXNativeTarget "GooDishTests" */;
+			buildPhases = (
+				0FE5E9201EF9FB7500E09EC9 /* Sources */,
+				0FE5E9211EF9FB7500E09EC9 /* Frameworks */,
+				0FE5E9221EF9FB7500E09EC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FE5E9261EF9FB7500E09EC9 /* PBXTargetDependency */,
+			);
+			name = GooDishTests;
+			productName = GooDishTests;
+			productReference = 0FE5E9241EF9FB7500E09EC9 /* GooDishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0FE5E92E1EF9FB7500E09EC9 /* GooDishUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE5E93E1EF9FB7500E09EC9 /* Build configuration list for PBXNativeTarget "GooDishUITests" */;
+			buildPhases = (
+				0FE5E92B1EF9FB7500E09EC9 /* Sources */,
+				0FE5E92C1EF9FB7500E09EC9 /* Frameworks */,
+				0FE5E92D1EF9FB7500E09EC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FE5E9311EF9FB7500E09EC9 /* PBXTargetDependency */,
+			);
+			name = GooDishUITests;
+			productName = GooDishUITests;
+			productReference = 0FE5E92F1EF9FB7500E09EC9 /* GooDishUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FE5E9031EF9FB7500E09EC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Yas Abdolmaleki";
+				TargetAttributes = {
+					0FE5E90A1EF9FB7500E09EC9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					0FE5E9231EF9FB7500E09EC9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0FE5E90A1EF9FB7500E09EC9;
+					};
+					0FE5E92E1EF9FB7500E09EC9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0FE5E90A1EF9FB7500E09EC9;
+					};
+				};
+			};
+			buildConfigurationList = 0FE5E9061EF9FB7500E09EC9 /* Build configuration list for PBXProject "GooDish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FE5E9021EF9FB7500E09EC9;
+			productRefGroup = 0FE5E90C1EF9FB7500E09EC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FE5E90A1EF9FB7500E09EC9 /* GooDish */,
+				0FE5E9231EF9FB7500E09EC9 /* GooDishTests */,
+				0FE5E92E1EF9FB7500E09EC9 /* GooDishUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FE5E9091EF9FB7500E09EC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE5E91E1EF9FB7500E09EC9 /* LaunchScreen.storyboard in Resources */,
+				0FE5E91B1EF9FB7500E09EC9 /* Assets.xcassets in Resources */,
+				0FE5E9191EF9FB7500E09EC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE5E9221EF9FB7500E09EC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE5E92D1EF9FB7500E09EC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FE5E9071EF9FB7500E09EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE5E9161EF9FB7500E09EC9 /* ViewController.m in Sources */,
+				0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */,
+				0FE5E9101EF9FB7500E09EC9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE5E9201EF9FB7500E09EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE5E9291EF9FB7500E09EC9 /* GooDishTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE5E92B1EF9FB7500E09EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE5E9341EF9FB7500E09EC9 /* GooDishUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FE5E9261EF9FB7500E09EC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FE5E90A1EF9FB7500E09EC9 /* GooDish */;
+			targetProxy = 0FE5E9251EF9FB7500E09EC9 /* PBXContainerItemProxy */;
+		};
+		0FE5E9311EF9FB7500E09EC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FE5E90A1EF9FB7500E09EC9 /* GooDish */;
+			targetProxy = 0FE5E9301EF9FB7500E09EC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FE5E9171EF9FB7500E09EC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FE5E9181EF9FB7500E09EC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FE5E91C1EF9FB7500E09EC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FE5E91D1EF9FB7500E09EC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FE5E9361EF9FB7500E09EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FE5E9371EF9FB7500E09EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FE5E9391EF9FB7500E09EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GooDish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YasDen.GooDish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0FE5E93A1EF9FB7500E09EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GooDish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YasDen.GooDish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0FE5E93C1EF9FB7500E09EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GooDishTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YasDen.GooDishTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GooDish.app/GooDish";
+			};
+			name = Debug;
+		};
+		0FE5E93D1EF9FB7500E09EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GooDishTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YasDen.GooDishTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GooDish.app/GooDish";
+			};
+			name = Release;
+		};
+		0FE5E93F1EF9FB7500E09EC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GooDishUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YasDen.GooDishUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GooDish;
+			};
+			name = Debug;
+		};
+		0FE5E9401EF9FB7500E09EC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GooDishUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YasDen.GooDishUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GooDish;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FE5E9061EF9FB7500E09EC9 /* Build configuration list for PBXProject "GooDish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE5E9361EF9FB7500E09EC9 /* Debug */,
+				0FE5E9371EF9FB7500E09EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FE5E9381EF9FB7500E09EC9 /* Build configuration list for PBXNativeTarget "GooDish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE5E9391EF9FB7500E09EC9 /* Debug */,
+				0FE5E93A1EF9FB7500E09EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0FE5E93B1EF9FB7500E09EC9 /* Build configuration list for PBXNativeTarget "GooDishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE5E93C1EF9FB7500E09EC9 /* Debug */,
+				0FE5E93D1EF9FB7500E09EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0FE5E93E1EF9FB7500E09EC9 /* Build configuration list for PBXNativeTarget "GooDishUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE5E93F1EF9FB7500E09EC9 /* Debug */,
+				0FE5E9401EF9FB7500E09EC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FE5E9031EF9FB7500E09EC9 /* Project object */;
+}
