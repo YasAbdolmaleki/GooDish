@@ -1,5 +1,5 @@
 //
-//  Restaurant.h
+//  ReviewUser.h
 //  GooDish
 //
 //  Created by Yas Abdolmaleki on 2017-06-21.
@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Restaurant : NSObject
+@interface ReviewUser : NSObject
 
 @property (nonatomic, strong) NSNumber *id;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *distance;
+@property (nonatomic, strong) NSString *profileImageUrl;
 
-- (id)initWithRestaurant:(NSDictionary *)restaurant;
-    
+- (id)initWithReviewUser:(NSDictionary *)user;
+
 @end

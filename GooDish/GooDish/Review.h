@@ -10,8 +10,11 @@
 
 @interface Review : NSObject
 
+@property (nonatomic, strong) NSNumber *id;
+@property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) NSString *ratings;
-@property (nonatomic, strong) NSString *numberOfRewievs;
+@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) NSDictionary *user;
 
 - (id)initWithReview:(NSDictionary *)review;
 

@@ -10,7 +10,7 @@
 
 @interface Dish : NSObject
 
-@property (nonatomic, strong) NSNumber *dishId;
+@property (nonatomic, strong) NSNumber *id;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *cuisine;
 @property (nonatomic, strong) NSString *imageUrl;

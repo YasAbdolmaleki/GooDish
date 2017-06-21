@@ -10,7 +10,7 @@
 
 #import "DishCollectionViewCell.h"
 #import "Dish.h"
-#import "Review.h"
+#import "DishReview.h"
 #import "Restaurant.h"
 
 @interface DishesCollectionViewController ()
@@ -18,7 +18,7 @@
 @property (nonatomic, strong) NSArray* dishes;
 @property (nonatomic, strong) Dish* currentDish;
 @property (nonatomic, strong) Restaurant* restaurant;
-@property (nonatomic, strong) Review* dishReview;
+@property (nonatomic, strong) DishReview* dishReview;
 
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 
@@ -91,7 +91,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
     self.currentDish = [[Dish alloc] initWithDish:self.dishes[indexPath.row]];
     self.restaurant = [[Restaurant alloc] initWithRestaurant:self.currentDish.restaurant];
-    self.dishReview = [[Review alloc] initWithReview:self.currentDish.review];
+    self.dishReview = [[DishReview alloc] initWithDishReview:self.currentDish.review];
     
     DishCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class]) forIndexPath:indexPath];
     
@@ -100,11 +100,11 @@ static NSString * const reuseIdentifier = @"Cell";
     
     cell.dishImage.image = [self fetchImageURL:self.currentDish.imageUrl];
     cell.dishNameLabel.text = self.currentDish.name;
-    cell.restaurantLabel.text = self.restaurant.restaurantName;
-    cell.restaurantDistanceLabel.text = self.restaurant.restaurantDistance;
+    cell.restaurantLabel.text = self.restaurant.name;
+    cell.restaurantDistanceLabel.text = self.restaurant.distance;
     cell.dishPriceLabel.text = self.currentDish.price;
     cell.starRatingImage.image = [self fetchImageURL:@"https://i.stack.imgur.com/sGnY4.jpg"]; //need to do some calculation to get the image self.dishReview.ratings
-    cell.numberOfReviewsLabel.text = self.dishReview.numberOfRewievs;
+    cell.numberOfReviewsLabel.text = self.dishReview.count;
     
     return cell;
 }

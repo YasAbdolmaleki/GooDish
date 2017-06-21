@@ -15,9 +15,9 @@
     self = [self init];
     
     if (self) {
-        self.restaurantId = [restaurant objectForKey:@"restaurantId"];
-        self.restaurantName = [restaurant objectForKey:@"restaurantName"];
-        self.restaurantDistance = [restaurant objectForKey:@"restaurantDistance"];;
+        self.id = [restaurant objectForKey:@"id"];
+        self.name = [restaurant objectForKey:@"name"];
+        self.distance = [restaurant objectForKey:@"distance"];;
     }
     
     return self;

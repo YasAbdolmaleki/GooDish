@@ -39,9 +39,15 @@
 		0FE5E9A61EFB139D00E09EC9 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9A51EFB139D00E09EC9 /* Restaurant.m */; };
 		0FE5E9A71EFB139D00E09EC9 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9A51EFB139D00E09EC9 /* Restaurant.m */; };
 		0FE5E9A81EFB139D00E09EC9 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9A51EFB139D00E09EC9 /* Restaurant.m */; };
-		0FE5E9AB1EFB13F800E09EC9 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9AA1EFB13F800E09EC9 /* Review.m */; };
-		0FE5E9AC1EFB13F800E09EC9 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9AA1EFB13F800E09EC9 /* Review.m */; };
-		0FE5E9AD1EFB13F800E09EC9 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9AA1EFB13F800E09EC9 /* Review.m */; };
+		0FE5E9AB1EFB13F800E09EC9 /* DishReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9AA1EFB13F800E09EC9 /* DishReview.m */; };
+		0FE5E9AC1EFB13F800E09EC9 /* DishReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9AA1EFB13F800E09EC9 /* DishReview.m */; };
+		0FE5E9AD1EFB13F800E09EC9 /* DishReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9AA1EFB13F800E09EC9 /* DishReview.m */; };
+		0FE5E9B01EFB26AF00E09EC9 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9AF1EFB26AF00E09EC9 /* Review.m */; };
+		0FE5E9B11EFB26AF00E09EC9 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9AF1EFB26AF00E09EC9 /* Review.m */; };
+		0FE5E9B21EFB26AF00E09EC9 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9AF1EFB26AF00E09EC9 /* Review.m */; };
+		0FE5E9B51EFB278B00E09EC9 /* ReviewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9B41EFB278B00E09EC9 /* ReviewUser.m */; };
+		0FE5E9B61EFB278B00E09EC9 /* ReviewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9B41EFB278B00E09EC9 /* ReviewUser.m */; };
+		0FE5E9B71EFB278B00E09EC9 /* ReviewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9B41EFB278B00E09EC9 /* ReviewUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,8 +109,12 @@
 		0FE5E9981EFA1FC600E09EC9 /* Dish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dish.m; sourceTree = "<group>"; };
 		0FE5E9A41EFB139D00E09EC9 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
 		0FE5E9A51EFB139D00E09EC9 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
-		0FE5E9A91EFB13F800E09EC9 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
-		0FE5E9AA1EFB13F800E09EC9 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
+		0FE5E9A91EFB13F800E09EC9 /* DishReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishReview.h; sourceTree = "<group>"; };
+		0FE5E9AA1EFB13F800E09EC9 /* DishReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishReview.m; sourceTree = "<group>"; };
+		0FE5E9AE1EFB26AF00E09EC9 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
+		0FE5E9AF1EFB26AF00E09EC9 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
+		0FE5E9B31EFB278B00E09EC9 /* ReviewUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewUser.h; sourceTree = "<group>"; };
+		0FE5E9B41EFB278B00E09EC9 /* ReviewUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,8 +228,12 @@
 				0FE5E9981EFA1FC600E09EC9 /* Dish.m */,
 				0FE5E9A41EFB139D00E09EC9 /* Restaurant.h */,
 				0FE5E9A51EFB139D00E09EC9 /* Restaurant.m */,
-				0FE5E9A91EFB13F800E09EC9 /* Review.h */,
-				0FE5E9AA1EFB13F800E09EC9 /* Review.m */,
+				0FE5E9A91EFB13F800E09EC9 /* DishReview.h */,
+				0FE5E9AA1EFB13F800E09EC9 /* DishReview.m */,
+				0FE5E9AE1EFB26AF00E09EC9 /* Review.h */,
+				0FE5E9AF1EFB26AF00E09EC9 /* Review.m */,
+				0FE5E9B31EFB278B00E09EC9 /* ReviewUser.h */,
+				0FE5E9B41EFB278B00E09EC9 /* ReviewUser.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -372,9 +386,11 @@
 			files = (
 				0FE5E9A61EFB139D00E09EC9 /* Restaurant.m in Sources */,
 				0FE5E9481EF9FDEA00E09EC9 /* DishesCollectionViewController.m in Sources */,
-				0FE5E9AB1EFB13F800E09EC9 /* Review.m in Sources */,
+				0FE5E9B01EFB26AF00E09EC9 /* Review.m in Sources */,
+				0FE5E9AB1EFB13F800E09EC9 /* DishReview.m in Sources */,
 				0FE5E9161EF9FB7500E09EC9 /* ViewController.m in Sources */,
 				0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */,
+				0FE5E9B51EFB278B00E09EC9 /* ReviewUser.m in Sources */,
 				0FE5E9991EFA1FC600E09EC9 /* Dish.m in Sources */,
 				0FE5E94E1EFA008C00E09EC9 /* DishCollectionViewCell.m in Sources */,
 				0FE5E9101EF9FB7500E09EC9 /* main.m in Sources */,
@@ -385,12 +401,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE5E9B61EFB278B00E09EC9 /* ReviewUser.m in Sources */,
 				0FE5E99A1EFA1FC600E09EC9 /* Dish.m in Sources */,
 				0FE5E9491EF9FDEA00E09EC9 /* DishesCollectionViewController.m in Sources */,
 				0FE5E9291EF9FB7500E09EC9 /* GooDishTests.m in Sources */,
 				0FE5E94F1EFA008C00E09EC9 /* DishCollectionViewCell.m in Sources */,
 				0FE5E9A71EFB139D00E09EC9 /* Restaurant.m in Sources */,
-				0FE5E9AC1EFB13F800E09EC9 /* Review.m in Sources */,
+				0FE5E9B11EFB26AF00E09EC9 /* Review.m in Sources */,
+				0FE5E9AC1EFB13F800E09EC9 /* DishReview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,12 +416,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE5E9B71EFB278B00E09EC9 /* ReviewUser.m in Sources */,
 				0FE5E99B1EFA1FC600E09EC9 /* Dish.m in Sources */,
 				0FE5E94A1EF9FDEA00E09EC9 /* DishesCollectionViewController.m in Sources */,
 				0FE5E9341EF9FB7500E09EC9 /* GooDishUITests.m in Sources */,
 				0FE5E9501EFA008C00E09EC9 /* DishCollectionViewCell.m in Sources */,
 				0FE5E9A81EFB139D00E09EC9 /* Restaurant.m in Sources */,
-				0FE5E9AD1EFB13F800E09EC9 /* Review.m in Sources */,
+				0FE5E9B21EFB26AF00E09EC9 /* Review.m in Sources */,
+				0FE5E9AD1EFB13F800E09EC9 /* DishReview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

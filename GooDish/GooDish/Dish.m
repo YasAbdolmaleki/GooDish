@@ -15,7 +15,7 @@
     self = [self init];
     
     if (self) {
-        self.dishId = [dish objectForKey:@"dishId"];
+        self.id = [dish objectForKey:@"id"];
         self.name = [dish objectForKey:@"name"];
         self.cuisine = [dish objectForKey:@"cuisine"];
         self.imageUrl = [dish objectForKey:@"imageUrl"];

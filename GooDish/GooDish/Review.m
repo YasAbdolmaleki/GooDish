@@ -10,13 +10,18 @@
 
 @implementation Review
 
+@synthesize description;
+
 - (id)initWithReview:(NSDictionary *)review {
     
     self = [self init];
     
     if (self) {
+        self.id = [review objectForKey:@"id"];
+        self.description = [review objectForKey:@"description"];
         self.ratings = [review objectForKey:@"ratings"];
-        self.numberOfRewievs = [review objectForKey:@"numberOfRewievs"];
+        self.date = [review objectForKey:@"date"];
+        self.user = [review objectForKey:@"user"];
     }
     
     return self;
