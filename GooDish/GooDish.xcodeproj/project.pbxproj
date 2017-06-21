@@ -15,6 +15,27 @@
 		0FE5E91E1EF9FB7500E09EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E91C1EF9FB7500E09EC9 /* LaunchScreen.storyboard */; };
 		0FE5E9291EF9FB7500E09EC9 /* GooDishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9281EF9FB7500E09EC9 /* GooDishTests.m */; };
 		0FE5E9341EF9FB7500E09EC9 /* GooDishUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9331EF9FB7500E09EC9 /* GooDishUITests.m */; };
+		0FE5E9431EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9421EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard */; };
+		0FE5E9441EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9421EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard */; };
+		0FE5E9451EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9421EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard */; };
+		0FE5E9481EF9FDEA00E09EC9 /* DishesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9471EF9FDEA00E09EC9 /* DishesCollectionViewController.m */; };
+		0FE5E9491EF9FDEA00E09EC9 /* DishesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9471EF9FDEA00E09EC9 /* DishesCollectionViewController.m */; };
+		0FE5E94A1EF9FDEA00E09EC9 /* DishesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9471EF9FDEA00E09EC9 /* DishesCollectionViewController.m */; };
+		0FE5E94E1EFA008C00E09EC9 /* DishCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E94C1EFA008C00E09EC9 /* DishCollectionViewCell.m */; };
+		0FE5E94F1EFA008C00E09EC9 /* DishCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E94C1EFA008C00E09EC9 /* DishCollectionViewCell.m */; };
+		0FE5E9501EFA008C00E09EC9 /* DishCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E94C1EFA008C00E09EC9 /* DishCollectionViewCell.m */; };
+		0FE5E9511EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E94D1EFA008C00E09EC9 /* DishCollectionViewCell.xib */; };
+		0FE5E9521EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E94D1EFA008C00E09EC9 /* DishCollectionViewCell.xib */; };
+		0FE5E9531EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E94D1EFA008C00E09EC9 /* DishCollectionViewCell.xib */; };
+		0FE5E9561EFA154300E09EC9 /* dishes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9541EFA154300E09EC9 /* dishes.json */; };
+		0FE5E9571EFA154300E09EC9 /* dishes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9541EFA154300E09EC9 /* dishes.json */; };
+		0FE5E9581EFA154300E09EC9 /* dishes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9541EFA154300E09EC9 /* dishes.json */; };
+		0FE5E9591EFA154300E09EC9 /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9551EFA154300E09EC9 /* reviews.json */; };
+		0FE5E95A1EFA154300E09EC9 /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9551EFA154300E09EC9 /* reviews.json */; };
+		0FE5E95B1EFA154300E09EC9 /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9551EFA154300E09EC9 /* reviews.json */; };
+		0FE5E95F1EFA18DA00E09EC9 /* Dishes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E95E1EFA18DA00E09EC9 /* Dishes.m */; };
+		0FE5E9601EFA18DA00E09EC9 /* Dishes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E95E1EFA18DA00E09EC9 /* Dishes.m */; };
+		0FE5E9611EFA18DA00E09EC9 /* Dishes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E95E1EFA18DA00E09EC9 /* Dishes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +55,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0FE5E9961EFA1ADC00E09EC9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0FE5E90B1EF9FB7500E09EC9 /* GooDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE5E90F1EF9FB7500E09EC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +85,16 @@
 		0FE5E92F1EF9FB7500E09EC9 /* GooDishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooDishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE5E9331EF9FB7500E09EC9 /* GooDishUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooDishUITests.m; sourceTree = "<group>"; };
 		0FE5E9351EF9FB7500E09EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE5E9421EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = searchDishes_iPhone.storyboard; sourceTree = "<group>"; };
+		0FE5E9461EF9FDEA00E09EC9 /* DishesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishesCollectionViewController.h; sourceTree = "<group>"; };
+		0FE5E9471EF9FDEA00E09EC9 /* DishesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishesCollectionViewController.m; sourceTree = "<group>"; };
+		0FE5E94B1EFA008C00E09EC9 /* DishCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishCollectionViewCell.h; sourceTree = "<group>"; };
+		0FE5E94C1EFA008C00E09EC9 /* DishCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishCollectionViewCell.m; sourceTree = "<group>"; };
+		0FE5E94D1EFA008C00E09EC9 /* DishCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DishCollectionViewCell.xib; sourceTree = "<group>"; };
+		0FE5E9541EFA154300E09EC9 /* dishes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = dishes.json; path = ../../../../Desktop/dishes.json; sourceTree = "<group>"; };
+		0FE5E9551EFA154300E09EC9 /* reviews.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = reviews.json; path = ../../../../Desktop/reviews.json; sourceTree = "<group>"; };
+		0FE5E95D1EFA18DA00E09EC9 /* Dishes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dishes.h; sourceTree = "<group>"; };
+		0FE5E95E1EFA18DA00E09EC9 /* Dishes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dishes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +145,7 @@
 		0FE5E90D1EF9FB7500E09EC9 /* GooDish */ = {
 			isa = PBXGroup;
 			children = (
+				0FE5E9411EF9FD6400E09EC9 /* searchDishes */,
 				0FE5E9111EF9FB7500E09EC9 /* AppDelegate.h */,
 				0FE5E9121EF9FB7500E09EC9 /* AppDelegate.m */,
 				0FE5E9141EF9FB7500E09EC9 /* ViewController.h */,
@@ -140,6 +185,31 @@
 			path = GooDishUITests;
 			sourceTree = "<group>";
 		};
+		0FE5E9411EF9FD6400E09EC9 /* searchDishes */ = {
+			isa = PBXGroup;
+			children = (
+				0FE5E95C1EFA188200E09EC9 /* Models */,
+				0FE5E9421EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard */,
+				0FE5E9461EF9FDEA00E09EC9 /* DishesCollectionViewController.h */,
+				0FE5E9471EF9FDEA00E09EC9 /* DishesCollectionViewController.m */,
+				0FE5E94B1EFA008C00E09EC9 /* DishCollectionViewCell.h */,
+				0FE5E94C1EFA008C00E09EC9 /* DishCollectionViewCell.m */,
+				0FE5E94D1EFA008C00E09EC9 /* DishCollectionViewCell.xib */,
+			);
+			name = searchDishes;
+			sourceTree = "<group>";
+		};
+		0FE5E95C1EFA188200E09EC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0FE5E9541EFA154300E09EC9 /* dishes.json */,
+				0FE5E9551EFA154300E09EC9 /* reviews.json */,
+				0FE5E95D1EFA18DA00E09EC9 /* Dishes.h */,
+				0FE5E95E1EFA18DA00E09EC9 /* Dishes.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +220,7 @@
 				0FE5E9071EF9FB7500E09EC9 /* Sources */,
 				0FE5E9081EF9FB7500E09EC9 /* Frameworks */,
 				0FE5E9091EF9FB7500E09EC9 /* Resources */,
+				0FE5E9961EFA1ADC00E09EC9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,8 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FE5E91E1EF9FB7500E09EC9 /* LaunchScreen.storyboard in Resources */,
+				0FE5E9431EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard in Resources */,
 				0FE5E91B1EF9FB7500E09EC9 /* Assets.xcassets in Resources */,
+				0FE5E9561EFA154300E09EC9 /* dishes.json in Resources */,
 				0FE5E9191EF9FB7500E09EC9 /* Main.storyboard in Resources */,
+				0FE5E9591EFA154300E09EC9 /* reviews.json in Resources */,
+				0FE5E9511EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +331,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE5E9571EFA154300E09EC9 /* dishes.json in Resources */,
+				0FE5E95A1EFA154300E09EC9 /* reviews.json in Resources */,
+				0FE5E9521EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */,
+				0FE5E9441EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +342,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE5E9581EFA154300E09EC9 /* dishes.json in Resources */,
+				0FE5E95B1EFA154300E09EC9 /* reviews.json in Resources */,
+				0FE5E9531EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */,
+				0FE5E9451EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE5E9481EF9FDEA00E09EC9 /* DishesCollectionViewController.m in Sources */,
 				0FE5E9161EF9FB7500E09EC9 /* ViewController.m in Sources */,
 				0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */,
+				0FE5E95F1EFA18DA00E09EC9 /* Dishes.m in Sources */,
+				0FE5E94E1EFA008C00E09EC9 /* DishCollectionViewCell.m in Sources */,
 				0FE5E9101EF9FB7500E09EC9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +369,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE5E9491EF9FDEA00E09EC9 /* DishesCollectionViewController.m in Sources */,
 				0FE5E9291EF9FB7500E09EC9 /* GooDishTests.m in Sources */,
+				0FE5E94F1EFA008C00E09EC9 /* DishCollectionViewCell.m in Sources */,
+				0FE5E9601EFA18DA00E09EC9 /* Dishes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +380,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE5E94A1EF9FDEA00E09EC9 /* DishesCollectionViewController.m in Sources */,
 				0FE5E9341EF9FB7500E09EC9 /* GooDishUITests.m in Sources */,
+				0FE5E9501EFA008C00E09EC9 /* DishCollectionViewCell.m in Sources */,
+				0FE5E9611EFA18DA00E09EC9 /* Dishes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
