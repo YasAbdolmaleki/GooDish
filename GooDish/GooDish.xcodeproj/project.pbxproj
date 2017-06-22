@@ -48,6 +48,9 @@
 		0FE5E9B51EFB278B00E09EC9 /* ReviewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9B41EFB278B00E09EC9 /* ReviewUser.m */; };
 		0FE5E9B61EFB278B00E09EC9 /* ReviewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9B41EFB278B00E09EC9 /* ReviewUser.m */; };
 		0FE5E9B71EFB278B00E09EC9 /* ReviewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9B41EFB278B00E09EC9 /* ReviewUser.m */; };
+		1663DBAB300E11BE23A7FF07 /* libPods-GooDishTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EA98BF2AD8C40828B84044 /* libPods-GooDishTests.a */; };
+		3BBE55BEF35AD8E746689D70 /* libPods-GooDish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4DCAFEB79A27D5FB81FDB /* libPods-GooDish.a */; };
+		D084EC8FC945CAB66120B868 /* libPods-GooDishUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F892DEE3607259D38EFC160 /* libPods-GooDishUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,15 @@
 		0FE5E9AF1EFB26AF00E09EC9 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
 		0FE5E9B31EFB278B00E09EC9 /* ReviewUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewUser.h; sourceTree = "<group>"; };
 		0FE5E9B41EFB278B00E09EC9 /* ReviewUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewUser.m; sourceTree = "<group>"; };
+		14D4DCAFEB79A27D5FB81FDB /* libPods-GooDish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GooDish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5202DD066EEB408B0DDEEF3A /* Pods-GooDishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooDishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooDishTests/Pods-GooDishTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F892DEE3607259D38EFC160 /* libPods-GooDishUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GooDishUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C73C4AA4D4A5398DCABF6BA /* Pods-GooDish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooDish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooDish/Pods-GooDish.debug.xcconfig"; sourceTree = "<group>"; };
+		857180AF37DB53877810CE5B /* Pods-GooDishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooDishTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GooDishTests/Pods-GooDishTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4EA98BF2AD8C40828B84044 /* libPods-GooDishTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GooDishTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89D015BC7A7743AFDF2D376 /* Pods-GooDishUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooDishUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GooDishUITests/Pods-GooDishUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E49D56B3D89495A94B54D011 /* Pods-GooDishUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooDishUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooDishUITests/Pods-GooDishUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4B0FD89F00E52701A88224B /* Pods-GooDish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooDish.release.xcconfig"; path = "Pods/Target Support Files/Pods-GooDish/Pods-GooDish.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBE55BEF35AD8E746689D70 /* libPods-GooDish.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1663DBAB300E11BE23A7FF07 /* libPods-GooDishTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D084EC8FC945CAB66120B868 /* libPods-GooDishUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +164,8 @@
 				0FE5E9271EF9FB7500E09EC9 /* GooDishTests */,
 				0FE5E9321EF9FB7500E09EC9 /* GooDishUITests */,
 				0FE5E90C1EF9FB7500E09EC9 /* Products */,
+				75078BEEBDFF35689537163E /* Pods */,
+				B23817D2DABED7E269783E63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +255,29 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		75078BEEBDFF35689537163E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C73C4AA4D4A5398DCABF6BA /* Pods-GooDish.debug.xcconfig */,
+				F4B0FD89F00E52701A88224B /* Pods-GooDish.release.xcconfig */,
+				5202DD066EEB408B0DDEEF3A /* Pods-GooDishTests.debug.xcconfig */,
+				857180AF37DB53877810CE5B /* Pods-GooDishTests.release.xcconfig */,
+				E49D56B3D89495A94B54D011 /* Pods-GooDishUITests.debug.xcconfig */,
+				C89D015BC7A7743AFDF2D376 /* Pods-GooDishUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B23817D2DABED7E269783E63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14D4DCAFEB79A27D5FB81FDB /* libPods-GooDish.a */,
+				A4EA98BF2AD8C40828B84044 /* libPods-GooDishTests.a */,
+				5F892DEE3607259D38EFC160 /* libPods-GooDishUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,10 +285,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FE5E9381EF9FB7500E09EC9 /* Build configuration list for PBXNativeTarget "GooDish" */;
 			buildPhases = (
+				08076E765F09898C3FC45565 /* [CP] Check Pods Manifest.lock */,
 				0FE5E9071EF9FB7500E09EC9 /* Sources */,
 				0FE5E9081EF9FB7500E09EC9 /* Frameworks */,
 				0FE5E9091EF9FB7500E09EC9 /* Resources */,
 				0FE5E9961EFA1ADC00E09EC9 /* Embed Frameworks */,
+				650B229B3AB197DC80C637B5 /* [CP] Embed Pods Frameworks */,
+				EE2A23A6342FD2F31FF64F81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,9 +306,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FE5E93B1EF9FB7500E09EC9 /* Build configuration list for PBXNativeTarget "GooDishTests" */;
 			buildPhases = (
+				3A5D3516F1196DC821123AB9 /* [CP] Check Pods Manifest.lock */,
 				0FE5E9201EF9FB7500E09EC9 /* Sources */,
 				0FE5E9211EF9FB7500E09EC9 /* Frameworks */,
 				0FE5E9221EF9FB7500E09EC9 /* Resources */,
+				70FEAACD0B9F6D34DC8DC948 /* [CP] Embed Pods Frameworks */,
+				239EF69432C16FED2A6C9B3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,9 +327,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FE5E93E1EF9FB7500E09EC9 /* Build configuration list for PBXNativeTarget "GooDishUITests" */;
 			buildPhases = (
+				5FD7EBBAC979AC607F76BB69 /* [CP] Check Pods Manifest.lock */,
 				0FE5E92B1EF9FB7500E09EC9 /* Sources */,
 				0FE5E92C1EF9FB7500E09EC9 /* Frameworks */,
 				0FE5E92D1EF9FB7500E09EC9 /* Resources */,
+				AE4B61371D83F129D46377A4 /* [CP] Embed Pods Frameworks */,
+				C940A2D3D50A2930A67515D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -378,6 +427,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08076E765F09898C3FC45565 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		239EF69432C16FED2A6C9B3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooDishTests/Pods-GooDishTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A5D3516F1196DC821123AB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5FD7EBBAC979AC607F76BB69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		650B229B3AB197DC80C637B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooDish/Pods-GooDish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70FEAACD0B9F6D34DC8DC948 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooDishTests/Pods-GooDishTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE4B61371D83F129D46377A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooDishUITests/Pods-GooDishUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C940A2D3D50A2930A67515D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooDishUITests/Pods-GooDishUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE2A23A6342FD2F31FF64F81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooDish/Pods-GooDish-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FE5E9071EF9FB7500E09EC9 /* Sources */ = {
@@ -556,6 +743,7 @@
 		};
 		0FE5E9391EF9FB7500E09EC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C73C4AA4D4A5398DCABF6BA /* Pods-GooDish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GooDish/Info.plist;
@@ -567,6 +755,7 @@
 		};
 		0FE5E93A1EF9FB7500E09EC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4B0FD89F00E52701A88224B /* Pods-GooDish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GooDish/Info.plist;
@@ -578,6 +767,7 @@
 		};
 		0FE5E93C1EF9FB7500E09EC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5202DD066EEB408B0DDEEF3A /* Pods-GooDishTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GooDishTests/Info.plist;
@@ -590,6 +780,7 @@
 		};
 		0FE5E93D1EF9FB7500E09EC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 857180AF37DB53877810CE5B /* Pods-GooDishTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GooDishTests/Info.plist;
@@ -602,6 +793,7 @@
 		};
 		0FE5E93F1EF9FB7500E09EC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49D56B3D89495A94B54D011 /* Pods-GooDishUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GooDishUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -613,6 +805,7 @@
 		};
 		0FE5E9401EF9FB7500E09EC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89D015BC7A7743AFDF2D376 /* Pods-GooDishUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GooDishUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
