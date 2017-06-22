@@ -13,6 +13,8 @@
 #import "DishReview.h"
 #import "Restaurant.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface DishesCollectionViewController ()
 
 @property (nonatomic, strong) NSArray* dishes;
@@ -70,12 +72,6 @@ static NSString * const reuseIdentifier = @"Cell";
     self.dishes = dishes;
 }
 
-- (UIImage *)fetchImageURL:(NSString *)url {
-    NSURL *imageURL = [NSURL URLWithString:url];
-    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-    return [UIImage imageWithData:imageData];
-}
-
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -93,18 +89,21 @@ static NSString * const reuseIdentifier = @"Cell";
     self.restaurant = [[Restaurant alloc] initWithRestaurant:self.currentDish.restaurant];
     self.dishReview = [[DishReview alloc] initWithDishReview:self.currentDish.review];
     
-    DishCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class]) forIndexPath:indexPath];
-    
+    DishCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class])
+                                                                             forIndexPath:indexPath];
+
     cell.layer.borderWidth=1.0f;
     cell.layer.borderColor=[UIColor grayColor].CGColor;
     
-    cell.dishImage.image = [self fetchImageURL:self.currentDish.imageUrl];
+    [cell.dishImage sd_setImageWithURL:[NSURL URLWithString:self.currentDish.imageUrl]
+                      placeholderImage:[UIImage imageNamed:@"dish-placeholder"]];
     cell.dishNameLabel.text = self.currentDish.name;
     cell.restaurantLabel.text = self.restaurant.name;
     cell.restaurantDistanceLabel.text = self.restaurant.distance;
     cell.dishPriceLabel.text = self.currentDish.price;
-    cell.starRatingImage.image = [self fetchImageURL:@"https://i.stack.imgur.com/sGnY4.jpg"]; //need to do some calculation to get the image self.dishReview.ratings
     cell.numberOfReviewsLabel.text = self.dishReview.count;
+    //need to do some calculation to get the image self.dishReview.ratings
+    [cell.starRatingImage sd_setImageWithURL:[NSURL URLWithString:@"https://i.stack.imgur.com/sGnY4.jpg"]];
     
     return cell;
 }
