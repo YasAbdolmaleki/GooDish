@@ -19,7 +19,9 @@
         self.name = [dish objectForKey:@"name"];
         self.cuisine = [dish objectForKey:@"cuisine"];
         self.imageUrl = [dish objectForKey:@"imageUrl"];
-        self.price = [dish objectForKey:@"price"];
+        
+        self.price = [NSString stringWithFormat: @"%@%@", @"$", [dish objectForKey:@"price"]];
+        
         self.restaurant = [dish objectForKey:@"restaurant"];
         self.review = [dish objectForKey:@"review"];
     }

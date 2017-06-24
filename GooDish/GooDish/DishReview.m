@@ -16,7 +16,13 @@
     
     if (self) {
         self.ratings = [review objectForKey:@"ratings"];
-        self.count = [review objectForKey:@"count"];
+        
+        NSNumber  *countInNumber = [NSNumber numberWithInteger: [[review objectForKey:@"count"] integerValue]];
+        NSNumberFormatter *formatter = [NSNumberFormatter new];
+        [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+        NSString *formatted = [formatter stringFromNumber:countInNumber];
+    
+        self.count = [NSString stringWithFormat:@"%@ %@", formatted, @"reviews"];
     }
     
     return self;

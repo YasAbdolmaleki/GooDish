@@ -18,6 +18,8 @@
         self.id = [restaurant objectForKey:@"id"];
         self.name = [restaurant objectForKey:@"name"];
         self.distance = [restaurant objectForKey:@"distance"];;
+        
+        self.distance = [NSString stringWithFormat: @"%@%@", [restaurant objectForKey:@"distance"], @"km away"];
     }
     
     return self;
