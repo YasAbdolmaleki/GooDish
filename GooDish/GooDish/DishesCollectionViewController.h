@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SearchCollectionViewCell.h"
 
-@interface DishesCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface DishesCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate, SearchCollectionViewCellDelegate>
 
 @end

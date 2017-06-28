@@ -12,7 +12,7 @@
         <!--Dishes Collection View Controller-->
         <scene sceneID="kG9-k7-DFH">
             <objects>
-                <collectionViewController storyboardIdentifier="DishesCollectionViewController" id="ylK-qD-Dhx" userLabel="Dishes Collection View Controller" customClass="DishesCollectionViewController" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="DishesCollectionViewController" title="Search Dishes" id="ylK-qD-Dhx" userLabel="Dishes Collection View Controller" customClass="DishesCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="ei9-F8-6ni">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

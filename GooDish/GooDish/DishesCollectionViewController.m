@@ -9,6 +9,8 @@
 #import "DishesCollectionViewController.h"
 
 #import "DishCollectionViewCell.h"
+#import "SearchCollectionViewCell.h"
+
 #import "Dish.h"
 #import "DishReview.h"
 #import "Restaurant.h"
@@ -23,6 +25,7 @@
 @property (nonatomic, strong) DishReview* dishReview;
 
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
+@property (strong) SearchCollectionViewCell *searchCollectionViewCell;
 
 @end
 
@@ -37,7 +40,6 @@ static NSString * const reuseIdentifier = @"Cell";
     [self setupView];
     
     [self fetchDishes:nil];
-    
 }
 
 - (void)setupView {
@@ -47,6 +49,9 @@ static NSString * const reuseIdentifier = @"Cell";
     
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([DishCollectionViewCell class]) bundle:nil]
           forCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class])];
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([SearchCollectionViewCell class]) bundle:nil]
+          forCellWithReuseIdentifier:NSStringFromClass([SearchCollectionViewCell class])];
 }
 
 - (void)pullToRefresh {
@@ -70,57 +75,83 @@ static NSString * const reuseIdentifier = @"Cell";
     NSArray *dishes = [[NSArray alloc] initWithArray:[dishesJsonParsed objectForKey:@"dishes"]];
     
     self.dishes = dishes;
+    // TODO add the searching functionality
+}
+
+#pragma mark <SearchCollectionViewCellDelegate>
+
+-(void)searchedText:(NSString *)searched {
+    NSLog(@"----> %@",searched);
+    [self fetchDishes:searched];
 }
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return 2;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self.dishes count];
+    if (section == 1) {
+        return [self.dishes count];
+    }
+    return 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.section == 1) {
+        self.currentDish = [[Dish alloc] initWithDish:self.dishes[indexPath.row]];
+        self.restaurant = [[Restaurant alloc] initWithRestaurant:self.currentDish.restaurant];
+        self.dishReview = [[DishReview alloc] initWithDishReview:self.currentDish.review];
+        
+        DishCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class])
+                                                                                 forIndexPath:indexPath];
+        
+        cell.layer.borderWidth=1.0f;
+        cell.layer.borderColor=[UIColor grayColor].CGColor;
+        
+        [cell.dishImage sd_setImageWithURL:[NSURL URLWithString:self.currentDish.imageUrl]
+                          placeholderImage:[UIImage imageNamed:@"dish-placeholder"]];
+        cell.dishNameLabel.text = self.currentDish.name;
+        cell.restaurantLabel.text = self.restaurant.name;
+        cell.restaurantDistanceLabel.text = self.restaurant.distance;
+        cell.dishPriceLabel.text = self.currentDish.price;
+        cell.numberOfReviewsLabel.text = self.dishReview.count;
+        
+        //need to do some calculation to get the image self.dishReview.ratings
+        [cell.starRatingImage sd_setImageWithURL:[NSURL URLWithString:@"https://i.stack.imgur.com/sGnY4.jpg"]];
+        
+        return cell;
+    }
 
-    self.currentDish = [[Dish alloc] initWithDish:self.dishes[indexPath.row]];
-    self.restaurant = [[Restaurant alloc] initWithRestaurant:self.currentDish.restaurant];
-    self.dishReview = [[DishReview alloc] initWithDishReview:self.currentDish.review];
-    
-    DishCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class])
-                                                                             forIndexPath:indexPath];
+    SearchCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([SearchCollectionViewCell class]) forIndexPath:indexPath];
+   
+    cell.delegate = self;
 
-    cell.layer.borderWidth=1.0f;
-    cell.layer.borderColor=[UIColor grayColor].CGColor;
-    
-    [cell.dishImage sd_setImageWithURL:[NSURL URLWithString:self.currentDish.imageUrl]
-                      placeholderImage:[UIImage imageNamed:@"dish-placeholder"]];
-    cell.dishNameLabel.text = self.currentDish.name;
-    cell.restaurantLabel.text = self.restaurant.name;
-    cell.restaurantDistanceLabel.text = self.restaurant.distance;
-    cell.dishPriceLabel.text = self.currentDish.price;
-    cell.numberOfReviewsLabel.text = self.dishReview.count;
-    //need to do some calculation to get the image self.dishReview.ratings
-    [cell.starRatingImage sd_setImageWithURL:[NSURL URLWithString:@"https://i.stack.imgur.com/sGnY4.jpg"]];
-    
     return cell;
+    
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(375, 250);
+    if (indexPath.section == 1) {
+        return CGSizeMake(375, 250);
+    }
+    return CGSizeMake(375, 50);
 }
 
 #pragma mark <UICollectionViewDelegate>
 
-/*
-// Uncomment this method to specify if the specified item should be selected
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
+    if (indexPath.section == 1) {
+        
+        
+    }
+    return NO;
 }
-*/
+
 
 
 @end
