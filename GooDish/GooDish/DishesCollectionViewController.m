@@ -8,6 +8,7 @@
 
 #import "DishesCollectionViewController.h"
 
+#import "DishCollectionViewController.h"
 #import "DishCollectionViewCell.h"
 #import "SearchCollectionViewCell.h"
 
@@ -52,6 +53,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([SearchCollectionViewCell class]) bundle:nil]
           forCellWithReuseIdentifier:NSStringFromClass([SearchCollectionViewCell class])];
+
 }
 
 - (void)pullToRefresh {
@@ -145,11 +147,23 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDelegate>
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     if (indexPath.section == 1) {
         
+        DishCollectionViewController *dishCollectionViewController = [[DishCollectionViewController alloc] init];
         
+        UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Dish_iPhone" bundle:nil];
+        
+        dishCollectionViewController = [storyboard instantiateViewControllerWithIdentifier:@"DishCollectionViewController"];
+    
+        dishCollectionViewController.dish = self.dishes[indexPath.row];
+        
+        [self.navigationController pushViewController:dishCollectionViewController animated:YES];
+
     }
+    
     return NO;
+    
 }
 
 

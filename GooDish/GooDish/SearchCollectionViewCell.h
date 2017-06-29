@@ -20,6 +20,5 @@
 
 @property (nonatomic, weak) id<SearchCollectionViewCellDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
-- (void)textFieldDidChange:(NSNotification *)notification;
 
 @end

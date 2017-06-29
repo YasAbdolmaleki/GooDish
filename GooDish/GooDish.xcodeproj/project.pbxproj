@@ -54,6 +54,12 @@
 		0FE5E9BF1EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9BB1EFE96E700E09EC9 /* SearchCollectionViewCell.xib */; };
 		0FE5E9C01EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9BB1EFE96E700E09EC9 /* SearchCollectionViewCell.xib */; };
 		0FE5E9C11EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9BB1EFE96E700E09EC9 /* SearchCollectionViewCell.xib */; };
+		0FE5E9C41F03353F00E09EC9 /* DishCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9C31F03353F00E09EC9 /* DishCollectionViewController.m */; };
+		0FE5E9C51F03353F00E09EC9 /* DishCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9C31F03353F00E09EC9 /* DishCollectionViewController.m */; };
+		0FE5E9C61F03353F00E09EC9 /* DishCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9C31F03353F00E09EC9 /* DishCollectionViewController.m */; };
+		0FE5E9C81F03357C00E09EC9 /* Dish_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9C71F03357C00E09EC9 /* Dish_iPhone.storyboard */; };
+		0FE5E9C91F03357C00E09EC9 /* Dish_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9C71F03357C00E09EC9 /* Dish_iPhone.storyboard */; };
+		0FE5E9CA1F03357C00E09EC9 /* Dish_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9C71F03357C00E09EC9 /* Dish_iPhone.storyboard */; };
 		1663DBAB300E11BE23A7FF07 /* libPods-GooDishTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EA98BF2AD8C40828B84044 /* libPods-GooDishTests.a */; };
 		3BBE55BEF35AD8E746689D70 /* libPods-GooDish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4DCAFEB79A27D5FB81FDB /* libPods-GooDish.a */; };
 		D084EC8FC945CAB66120B868 /* libPods-GooDishUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F892DEE3607259D38EFC160 /* libPods-GooDishUITests.a */; };
@@ -127,6 +133,9 @@
 		0FE5E9B91EFE96E700E09EC9 /* SearchCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCollectionViewCell.h; sourceTree = "<group>"; };
 		0FE5E9BA1EFE96E700E09EC9 /* SearchCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCollectionViewCell.m; sourceTree = "<group>"; };
 		0FE5E9BB1EFE96E700E09EC9 /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		0FE5E9C21F03353F00E09EC9 /* DishCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishCollectionViewController.h; sourceTree = "<group>"; };
+		0FE5E9C31F03353F00E09EC9 /* DishCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishCollectionViewController.m; sourceTree = "<group>"; };
+		0FE5E9C71F03357C00E09EC9 /* Dish_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dish_iPhone.storyboard; sourceTree = "<group>"; };
 		14D4DCAFEB79A27D5FB81FDB /* libPods-GooDish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GooDish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5202DD066EEB408B0DDEEF3A /* Pods-GooDishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooDishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooDishTests/Pods-GooDishTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F892DEE3607259D38EFC160 /* libPods-GooDishUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GooDishUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +247,9 @@
 				0FE5E9421EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard */,
 				0FE5E9461EF9FDEA00E09EC9 /* DishesCollectionViewController.h */,
 				0FE5E9471EF9FDEA00E09EC9 /* DishesCollectionViewController.m */,
+				0FE5E9C21F03353F00E09EC9 /* DishCollectionViewController.h */,
+				0FE5E9C31F03353F00E09EC9 /* DishCollectionViewController.m */,
+				0FE5E9C71F03357C00E09EC9 /* Dish_iPhone.storyboard */,
 				0FE5E94B1EFA008C00E09EC9 /* DishCollectionViewCell.h */,
 				0FE5E94C1EFA008C00E09EC9 /* DishCollectionViewCell.m */,
 				0FE5E94D1EFA008C00E09EC9 /* DishCollectionViewCell.xib */,
@@ -406,6 +418,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE5E9C81F03357C00E09EC9 /* Dish_iPhone.storyboard in Resources */,
 				0FE5E91E1EF9FB7500E09EC9 /* LaunchScreen.storyboard in Resources */,
 				0FE5E9431EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard in Resources */,
 				0FE5E9BF1EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */,
@@ -424,6 +437,7 @@
 				0FE5E9571EFA154300E09EC9 /* dishes.json in Resources */,
 				0FE5E95A1EFA154300E09EC9 /* reviews.json in Resources */,
 				0FE5E9C01EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */,
+				0FE5E9C91F03357C00E09EC9 /* Dish_iPhone.storyboard in Resources */,
 				0FE5E9521EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */,
 				0FE5E9441EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard in Resources */,
 			);
@@ -436,6 +450,7 @@
 				0FE5E9581EFA154300E09EC9 /* dishes.json in Resources */,
 				0FE5E95B1EFA154300E09EC9 /* reviews.json in Resources */,
 				0FE5E9C11EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */,
+				0FE5E9CA1F03357C00E09EC9 /* Dish_iPhone.storyboard in Resources */,
 				0FE5E9531EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */,
 				0FE5E9451EF9FDBD00E09EC9 /* searchDishes_iPhone.storyboard in Resources */,
 			);
@@ -594,6 +609,7 @@
 				0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */,
 				0FE5E9B51EFB278B00E09EC9 /* ReviewUser.m in Sources */,
 				0FE5E9991EFA1FC600E09EC9 /* Dish.m in Sources */,
+				0FE5E9C41F03353F00E09EC9 /* DishCollectionViewController.m in Sources */,
 				0FE5E94E1EFA008C00E09EC9 /* DishCollectionViewCell.m in Sources */,
 				0FE5E9BC1EFE96E700E09EC9 /* SearchCollectionViewCell.m in Sources */,
 				0FE5E9101EF9FB7500E09EC9 /* main.m in Sources */,
@@ -604,6 +620,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE5E9C51F03353F00E09EC9 /* DishCollectionViewController.m in Sources */,
 				0FE5E9BD1EFE96E700E09EC9 /* SearchCollectionViewCell.m in Sources */,
 				0FE5E9B61EFB278B00E09EC9 /* ReviewUser.m in Sources */,
 				0FE5E99A1EFA1FC600E09EC9 /* Dish.m in Sources */,
@@ -620,6 +637,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE5E9C61F03353F00E09EC9 /* DishCollectionViewController.m in Sources */,
 				0FE5E9BE1EFE96E700E09EC9 /* SearchCollectionViewCell.m in Sources */,
 				0FE5E9B71EFB278B00E09EC9 /* ReviewUser.m in Sources */,
 				0FE5E99B1EFA1FC600E09EC9 /* Dish.m in Sources */,
