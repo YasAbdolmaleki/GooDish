@@ -40,6 +40,7 @@
                     </label>
                 </subviews>
             </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="CbJ-tv-JRZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Gg6-Og-94O"/>
                 <constraint firstItem="FEQ-L3-EmV" firstAttribute="top" secondItem="c3k-cp-Xoe" secondAttribute="bottom" constant="10" id="Zwh-F5-ynj"/>

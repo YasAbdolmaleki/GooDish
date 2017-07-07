@@ -8,6 +8,10 @@
 
 #import "ProfileCollectionViewController.h"
 
+#import "ProfileHeaderCollectionViewCell.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface ProfileCollectionViewController ()
 
 @end
@@ -17,52 +21,57 @@
 static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    [self setupView];
+}
+
+- (void)setupView {
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // Do any additional setup after loading the view.
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([ProfileHeaderCollectionViewCell class]) bundle:nil]
+          forCellWithReuseIdentifier:NSStringFromClass([ProfileHeaderCollectionViewCell class])];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+    return 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
+    ProfileHeaderCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([ProfileHeaderCollectionViewCell class]) forIndexPath:indexPath];
+    
+    
+    [cell.profileImage sd_setImageWithURL:[NSURL URLWithString:@"https://i.ytimg.com/vi/TZiQK81Rjfw/maxresdefault.jpg"]];
+    cell.nameLabel.text = @"Bob Smith";
+    cell.locationLabel.text = @"Toronto, Ontario";
+    cell.reviewsLabel.text = @"Reviews (231)";
     
     return cell;
 }
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(collectionView.contentSize.width, 350);
+}
+
+#pragma mark <UICollectionViewLayoutDelegate>
+//
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *) self.collectionView.collectionViewLayout;
+//    flowLayout.estimatedItemSize = CGSizeMake(375, 350);
+//    
+//    return flowLayout.estimatedItemSize;
+//}
 
 #pragma mark <UICollectionViewDelegate>
 

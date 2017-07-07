@@ -13,6 +13,12 @@
 		0F4373D41F0F185600632C5E /* Profile_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4373D31F0F185600632C5E /* Profile_iPhone.storyboard */; };
 		0F4373D51F0F185600632C5E /* Profile_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4373D31F0F185600632C5E /* Profile_iPhone.storyboard */; };
 		0F4373D61F0F185600632C5E /* Profile_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4373D31F0F185600632C5E /* Profile_iPhone.storyboard */; };
+		0F4373DA1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4373D81F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m */; };
+		0F4373DB1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4373D81F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m */; };
+		0F4373DC1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4373D81F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m */; };
+		0F4373DD1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4373D91F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib */; };
+		0F4373DE1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4373D91F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib */; };
+		0F4373DF1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4373D91F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib */; };
 		0FE5E9101EF9FB7500E09EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E90F1EF9FB7500E09EC9 /* main.m */; };
 		0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9121EF9FB7500E09EC9 /* AppDelegate.m */; };
 		0FE5E9161EF9FB7500E09EC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9151EF9FB7500E09EC9 /* ViewController.m */; };
@@ -111,6 +117,9 @@
 		0F4373CE1F0F182B00632C5E /* ProfileCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCollectionViewController.h; sourceTree = "<group>"; };
 		0F4373CF1F0F182B00632C5E /* ProfileCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileCollectionViewController.m; sourceTree = "<group>"; };
 		0F4373D31F0F185600632C5E /* Profile_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile_iPhone.storyboard; sourceTree = "<group>"; };
+		0F4373D71F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderCollectionViewCell.h; sourceTree = "<group>"; };
+		0F4373D81F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderCollectionViewCell.m; sourceTree = "<group>"; };
+		0F4373D91F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		0FE5E90B1EF9FB7500E09EC9 /* GooDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE5E90F1EF9FB7500E09EC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FE5E9111EF9FB7500E09EC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -310,6 +319,9 @@
 				0FE5E9D31F04966C00E09EC9 /* ReviewCollectionViewCell.h */,
 				0FE5E9D41F04966C00E09EC9 /* ReviewCollectionViewCell.m */,
 				0FE5E9D51F04966C00E09EC9 /* ReviewCollectionViewCell.xib */,
+				0F4373D71F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.h */,
+				0F4373D81F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m */,
+				0F4373D91F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -475,6 +487,7 @@
 				0FE5E9561EFA154300E09EC9 /* dishes.json in Resources */,
 				0F4373D41F0F185600632C5E /* Profile_iPhone.storyboard in Resources */,
 				0FE5E9191EF9FB7500E09EC9 /* Main.storyboard in Resources */,
+				0F4373DD1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib in Resources */,
 				0FE5E9591EFA154300E09EC9 /* reviews.json in Resources */,
 				0FE5E9511EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */,
 			);
@@ -487,6 +500,7 @@
 				0FE5E9571EFA154300E09EC9 /* dishes.json in Resources */,
 				0FE5E95A1EFA154300E09EC9 /* reviews.json in Resources */,
 				0FE5E9C01EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */,
+				0F4373DE1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib in Resources */,
 				0F4373D51F0F185600632C5E /* Profile_iPhone.storyboard in Resources */,
 				0FE5E9DA1F04966C00E09EC9 /* ReviewCollectionViewCell.xib in Resources */,
 				0FE5E9C91F03357C00E09EC9 /* Dish_iPhone.storyboard in Resources */,
@@ -502,6 +516,7 @@
 				0FE5E9581EFA154300E09EC9 /* dishes.json in Resources */,
 				0FE5E95B1EFA154300E09EC9 /* reviews.json in Resources */,
 				0FE5E9C11EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */,
+				0F4373DF1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib in Resources */,
 				0F4373D61F0F185600632C5E /* Profile_iPhone.storyboard in Resources */,
 				0FE5E9DB1F04966C00E09EC9 /* ReviewCollectionViewCell.xib in Resources */,
 				0FE5E9CA1F03357C00E09EC9 /* Dish_iPhone.storyboard in Resources */,
@@ -660,6 +675,7 @@
 				0FE5E9B01EFB26AF00E09EC9 /* Review.m in Sources */,
 				0FE5E9AB1EFB13F800E09EC9 /* DishReview.m in Sources */,
 				0FE5E9161EF9FB7500E09EC9 /* ViewController.m in Sources */,
+				0F4373DA1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m in Sources */,
 				0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */,
 				0F4373D01F0F182B00632C5E /* ProfileCollectionViewController.m in Sources */,
 				0FE5E9B51EFB278B00E09EC9 /* ReviewUser.m in Sources */,
@@ -687,6 +703,7 @@
 				0F4373D11F0F182B00632C5E /* ProfileCollectionViewController.m in Sources */,
 				0FE5E9A71EFB139D00E09EC9 /* Restaurant.m in Sources */,
 				0FE5E9B11EFB26AF00E09EC9 /* Review.m in Sources */,
+				0F4373DB1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m in Sources */,
 				0FE5E9AC1EFB13F800E09EC9 /* DishReview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -706,6 +723,7 @@
 				0F4373D21F0F182B00632C5E /* ProfileCollectionViewController.m in Sources */,
 				0FE5E9A81EFB139D00E09EC9 /* Restaurant.m in Sources */,
 				0FE5E9B21EFB26AF00E09EC9 /* Review.m in Sources */,
+				0F4373DC1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m in Sources */,
 				0FE5E9AD1EFB13F800E09EC9 /* DishReview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
