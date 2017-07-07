@@ -9,7 +9,7 @@
 #import "DishesCollectionViewController.h"
 
 #import "DishCollectionViewController.h"
-#import "DishCollectionViewCell.h"
+#import "DishHeaderCollectionViewCell.h"
 #import "SearchCollectionViewCell.h"
 
 #import "Dish.h"
@@ -48,8 +48,8 @@ static NSString * const reuseIdentifier = @"Cell";
     
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([DishCollectionViewCell class]) bundle:nil]
-          forCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class])];
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([DishHeaderCollectionViewCell class]) bundle:nil]
+          forCellWithReuseIdentifier:NSStringFromClass([DishHeaderCollectionViewCell class])];
     
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([SearchCollectionViewCell class]) bundle:nil]
           forCellWithReuseIdentifier:NSStringFromClass([SearchCollectionViewCell class])];
@@ -108,7 +108,7 @@ static NSString * const reuseIdentifier = @"Cell";
         self.restaurant = [[Restaurant alloc] initWithRestaurant:self.currentDish.restaurant];
         self.dishReview = [[DishReview alloc] initWithDishReview:self.currentDish.review];
         
-        DishCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class])
+        DishHeaderCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DishHeaderCollectionViewCell class])
                                                                                  forIndexPath:indexPath];
         
         cell.layer.borderWidth=1.0f;
@@ -116,7 +116,6 @@ static NSString * const reuseIdentifier = @"Cell";
         
         [cell.dishImage sd_setImageWithURL:[NSURL URLWithString:self.currentDish.imageUrl]
                           placeholderImage:[UIImage imageNamed:@"dish-placeholder"]];
-        cell.dishNameLabel.text = self.currentDish.name;
         cell.restaurantLabel.text = self.restaurant.name;
         cell.restaurantDistanceLabel.text = self.restaurant.distance;
         cell.dishPriceLabel.text = self.currentDish.price;
@@ -139,7 +138,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 1) {
-        return CGSizeMake(375, 250);
+        return CGSizeMake(375, 140);
     }
     return CGSizeMake(375, 50);
 }

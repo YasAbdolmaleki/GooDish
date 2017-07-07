@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UICollectionViewController *loginController = [[UIStoryboard storyboardWithName:@"searchDishes_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"DishesCollectionViewController"]; 
+    UICollectionViewController *loginController = [[UIStoryboard storyboardWithName:@"SearchDishes_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"DishesCollectionViewController"]; 
     UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:loginController];
     self.window.rootViewController = navController;
     

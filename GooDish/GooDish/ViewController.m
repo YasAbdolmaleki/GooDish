@@ -19,7 +19,7 @@
     
     [super viewDidLoad];
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"searchDishes_iPhone" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"SearchDishes_iPhone" bundle:nil];
     UICollectionViewController *dishesCVC = [storyboard instantiateViewControllerWithIdentifier:@"DishesCollectionViewController"];
     //[self presentViewController:dishesCVC animated:YES completion:NULL];
     [self.navigationController pushViewController:dishesCVC animated:YES];
