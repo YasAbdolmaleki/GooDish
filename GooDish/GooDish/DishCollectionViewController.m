@@ -11,6 +11,8 @@
 #import "DishCollectionViewCell.h"
 #import "ReviewCollectionViewCell.h"
 
+#import "ProfileCollectionViewController.h"
+
 #import "Restaurant.h"
 #import "DishReview.h"
 #import "Dish.h"
@@ -87,9 +89,6 @@ static NSString * const reuseIdentifier = @"Cell";
         DishCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DishCollectionViewCell class])
                                                                                  forIndexPath:indexPath];
         
-        cell.layer.borderWidth=1.0f;
-        cell.layer.borderColor=[UIColor grayColor].CGColor;
-        
         [cell.dishImage sd_setImageWithURL:[NSURL URLWithString:selectedDish.imageUrl]
                           placeholderImage:[UIImage imageNamed:@"dish-placeholder"]];
         cell.dishNameLabel.text = selectedDish.name;
@@ -133,33 +132,22 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark <UICollectionViewDelegate>
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
+    
+    if (indexPath.section == 1) {
+        
+        ProfileCollectionViewController *profileCollectionViewController = [[ProfileCollectionViewController alloc] init];
+        
+        UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Profile_iPhone" bundle:nil];
+        
+        profileCollectionViewController = [storyboard instantiateViewControllerWithIdentifier:@"ProfileCollectionViewController"];
+        
+        [self.navigationController pushViewController:profileCollectionViewController animated:YES];
+        
+    }
+    
+    return NO;
+    
 }
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end
