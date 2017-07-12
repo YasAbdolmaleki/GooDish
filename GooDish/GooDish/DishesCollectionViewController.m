@@ -110,10 +110,7 @@ static NSString * const reuseIdentifier = @"Cell";
         
         DishHeaderCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DishHeaderCollectionViewCell class])
                                                                                  forIndexPath:indexPath];
-        
-        cell.layer.borderWidth=1.0f;
-        cell.layer.borderColor=[UIColor grayColor].CGColor;
-        
+
         [cell.dishImage sd_setImageWithURL:[NSURL URLWithString:self.currentDish.imageUrl]
                           placeholderImage:[UIImage imageNamed:@"dish-placeholder"]];
         cell.restaurantLabel.text = self.restaurant.name;
@@ -124,6 +121,13 @@ static NSString * const reuseIdentifier = @"Cell";
         //need to do some calculation to get the image self.dishReview.ratings
         [cell.starRatingImage sd_setImageWithURL:[NSURL URLWithString:@"https://i.stack.imgur.com/sGnY4.jpg"]];
         
+        cell.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+        cell.layer.shadowOffset = CGSizeMake(0, 2.0f);
+        cell.layer.shadowRadius = 2.0f;
+        cell.layer.shadowOpacity = 1.0f;
+        cell.layer.masksToBounds = NO;
+        cell.layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:cell.bounds cornerRadius:cell.contentView.layer.cornerRadius].CGPath;
+
         return cell;
     }
 

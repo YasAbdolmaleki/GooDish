@@ -116,8 +116,12 @@ static NSString * const reuseIdentifier = @"Cell";
     [cell.rating sd_setImageWithURL:[NSURL URLWithString:@"https://i.stack.imgur.com/sGnY4.jpg"]];
     cell.ratingDescription.text = self.review.description;
     
-    cell.layer.borderWidth=1.0f;
-    cell.layer.borderColor=[UIColor grayColor].CGColor;
+    cell.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+    cell.layer.shadowOffset = CGSizeMake(0, 2.0f);
+    cell.layer.shadowRadius = 2.0f;
+    cell.layer.shadowOpacity = 1.0f;
+    cell.layer.masksToBounds = NO;
+    cell.layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:cell.bounds cornerRadius:cell.contentView.layer.cornerRadius].CGPath;
 
     return cell;
 }
