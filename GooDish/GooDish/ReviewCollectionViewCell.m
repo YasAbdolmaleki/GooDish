@@ -8,11 +8,22 @@
 
 #import "ReviewCollectionViewCell.h"
 
+@interface ReviewCollectionViewCell()
+@property (strong,nonatomic) NSLayoutConstraint *cellWidthConstraint;
+@end
+
 @implementation ReviewCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.cellWidthConstraint = [self.contentView.widthAnchor constraintEqualToConstant:0.0f];
+
+}
+
+- (void)setCellWidth:(CGFloat)width {
+    self.cellWidthConstraint.constant = width;
+    self.cellWidthConstraint.active = YES;
 }
 
 @end

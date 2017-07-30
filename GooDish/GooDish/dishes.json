@@ -1,0 +1,276 @@
+{
+    "dishes": [
+               {
+               "id": 1,
+               "name": "Burrito",
+               "cuisine": "Mexican",
+               "imageUrl": "https://www.deltaco.com/files/menu/item/machocomboburrito.png",
+               "price": "15.02",
+               "restaurant": {
+               "id": 10,
+               "name": "chipotle",
+               "distance": "4.5"
+               },
+               "review": {
+               "ratings": "3.4",
+               "count": "21231323"
+               }
+               },
+               {
+               "id": 2,
+               "name": "Pasta",
+               "cuisine": "Italian",
+               "imageUrl": "https://www.cicis.com/media/1250/side_pastamarinara.png",
+               "price": "20.12",
+               "restaurant": {
+               "id": 11,
+               "name": "East Side Mario",
+               "distance": "2.5"
+               },
+               "review": {
+               "ratings": "5.0",
+               "count": "13"
+               }
+               },
+               {
+               "id": 6,
+               "name": "Steak",
+               "cuisine": "America",
+               "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/09/16/steak-alamy.jpg",
+               "price": "58.05",
+               "restaurant": {
+               "id": 14,
+               "name": "KEG",
+               "distance": "10.2"
+               },
+               "review": {
+               "ratings": "4.2",
+               "count": "122"
+               }
+               },
+               {
+               "id": 1,
+               "name": "Burrito",
+               "cuisine": "Mexican",
+               "imageUrl": "https://www.deltaco.com/files/menu/item/machocomboburrito.png",
+               "price": "15.02",
+               "restaurant": {
+               "id": 10,
+               "name": "chipotle",
+               "distance": "4.5"
+               },
+               "review": {
+               "ratings": "3.4",
+               "count": "23"
+               }
+               },
+               {
+               "id": 2,
+               "name": "Pasta",
+               "cuisine": "Italian",
+               "imageUrl": "https://www.cicis.com/media/1250/side_pastamarinara.png",
+               "price": "20.12",
+               "restaurant": {
+               "id": 11,
+               "name": "East Side Mario",
+               "distance": "2.5"
+               },
+               "review": {
+               "ratings": "5.0",
+               "count": "13"
+               }
+               },
+               {
+               "id": 6,
+               "name": "Steak",
+               "cuisine": "America",
+               "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/09/16/steak-alamy.jpg",
+               "price": "58.05",
+               "restaurant": {
+               "id": 14,
+               "name": "KEG",
+               "distance": "10.2"
+               },
+               "review": {
+               "ratings": "4.2",
+               "count": "122"
+               }
+               },
+               {
+               "id": 1,
+               "name": "Burrito",
+               "cuisine": "Mexican",
+               "imageUrl": "https://www.deltaco.com/files/menu/item/machocomboburrito.png",
+               "price": "15.02",
+               "restaurant": {
+               "id": 10,
+               "name": "chipotle",
+               "distance": "4.5"
+               },
+               "review": {
+               "ratings": "3.4",
+               "count": "23"
+               }
+               },
+               {
+               "id": 2,
+               "name": "Pasta",
+               "cuisine": "Italian",
+               "imageUrl": "https://www.cicis.com/media/1250/side_pastamarinara.png",
+               "price": "20.12",
+               "restaurant": {
+               "id": 11,
+               "name": "East Side Mario",
+               "distance": "2.5"
+               },
+               "review": {
+               "ratings": "5.0",
+               "count": "13"
+               }
+               },
+               {
+               "id": 6,
+               "name": "Steak",
+               "cuisine": "America",
+               "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/09/16/steak-alamy.jpg",
+               "price": "58.05",
+               "restaurant": {
+               "id": 14,
+               "name": "KEG",
+               "distance": "10.2"
+               },
+               "review": {
+               "ratings": "4.2",
+               "count": "122"
+               }
+               },
+               {
+               "id": 2,
+               "name": "Pasta",
+               "cuisine": "Italian",
+               "imageUrl": "https://www.cicis.com/media/1250/side_pastamarinara.png",
+               "price": "20.12",
+               "restaurant": {
+               "id": 11,
+               "name": "East Side Mario",
+               "distance": "2.5"
+               },
+               "review": {
+               "ratings": "5.0",
+               "count": "13"
+               }
+               },
+               {
+               "id": 6,
+               "name": "Steak",
+               "cuisine": "America",
+               "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/09/16/steak-alamy.jpg",
+               "price": "58.05",
+               "restaurant": {
+               "id": 14,
+               "name": "KEG",
+               "distance": "10.2"
+               },
+               "review": {
+               "ratings": "4.2",
+               "count": "122"
+               }
+               },
+               {
+               "id": 2,
+               "name": "Pasta",
+               "cuisine": "Italian",
+               "imageUrl": "https://www.cicis.com/media/1250/side_pastamarinara.png",
+               "price": "20.12",
+               "restaurant": {
+               "id": 11,
+               "name": "East Side Mario",
+               "distance": "2.5"
+               },
+               "review": {
+               "ratings": "5.0",
+               "count": "13"
+               }
+               },
+               {
+               "id": 6,
+               "name": "Steak",
+               "cuisine": "America",
+               "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/09/16/steak-alamy.jpg",
+               "price": "58.05",
+               "restaurant": {
+               "id": 14,
+               "name": "KEG",
+               "distance": "10.2"
+               },
+               "review": {
+               "ratings": "4.2",
+               "count": "122"
+               }
+               },
+               {
+               "id": 2,
+               "name": "Pasta",
+               "cuisine": "Italian",
+               "imageUrl": "https://www.cicis.com/media/1250/side_pastamarinara.png",
+               "price": "20.12",
+               "restaurant": {
+               "id": 11,
+               "name": "East Side Mario",
+               "distance": "2.5"
+               },
+               "review": {
+               "ratings": "5.0",
+               "count": "13"
+               }
+               },
+               {
+               "id": 6,
+               "name": "Steak",
+               "cuisine": "America",
+               "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/09/16/steak-alamy.jpg",
+               "price": "58.05",
+               "restaurant": {
+               "id": 14,
+               "name": "KEG",
+               "distance": "10.2"
+               },
+               "review": {
+               "ratings": "4.2",
+               "count": "122"
+               }
+               },
+               {
+               "id": 2,
+               "name": "Pasta",
+               "cuisine": "Italian",
+               "imageUrl": "https://www.cicis.com/media/1250/side_pastamarinara.png",
+               "price": "20.12",
+               "restaurant": {
+               "id": 11,
+               "name": "East Side Mario",
+               "distance": "2.5"
+               },
+               "review": {
+               "ratings": "5.0",
+               "count": "13"
+               }
+               },
+               {
+               "id": 6,
+               "name": "Steak",
+               "cuisine": "America",
+               "imageUrl": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/09/16/steak-alamy.jpg",
+               "price": "58.05",
+               "restaurant": {
+               "id": 14,
+               "name": "KEG",
+               "distance": "10.2"
+               },
+               "review": {
+               "ratings": "4.2",
+               "count": "122"
+               }
+               }
+               ]
+}

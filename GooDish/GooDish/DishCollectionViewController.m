@@ -28,6 +28,9 @@
 @property (nonatomic, strong) NSArray* reviews;
 @property (nonatomic, strong) Review* review;
 @property (nonatomic, strong) ReviewUser* reviewUser;
+@property (nonatomic, strong) ReviewCollectionViewCell *reviewCollectionViewCell;
+
+@property (strong, nonatomic) IBOutlet UICollectionView *dishCollectionView;
 
 @end
 
@@ -62,6 +65,24 @@ static NSString * const reuseIdentifier = @"Cell";
     NSArray *reviews = [[NSArray alloc] initWithArray:[reviewsJsonParsed objectForKey:@"reviews"]];
     
     self.reviews = reviews;
+}
+
+- (ReviewCollectionViewCell *)reviewSizingCell{
+    if (!_reviewCollectionViewCell) {
+        _reviewCollectionViewCell = [[[UINib nibWithNibName:NSStringFromClass([ReviewCollectionViewCell class]) bundle:nil] instantiateWithOwner:self options:nil] firstObject];
+    }
+    return _reviewCollectionViewCell;
+}
+
+#pragma mark <UICollectionViewLayout>
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        return CGSizeMake(375, 250);
+    }
+    UICollectionViewCell *cellToFit = [self reviewSectionCellForIndexPath:indexPath isReusableCell:NO];
+    return [cellToFit systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -102,16 +123,20 @@ static NSString * const reuseIdentifier = @"Cell";
         
         return cell;
     }
+    
+    return [self reviewSectionCellForIndexPath:indexPath isReusableCell:YES];
+    
+}
 
+- (UICollectionViewCell *)reviewSectionCellForIndexPath:(NSIndexPath *)indexPath isReusableCell:(BOOL)isReusable{
+    
     self.review = [[Review alloc] initWithReview:self.reviews[indexPath.row]];
     self.reviewUser = [[ReviewUser alloc] initWithReviewUser:self.review.user];
+    
+    ReviewCollectionViewCell *cell = isReusable ? [self.dishCollectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([ReviewCollectionViewCell class]) forIndexPath:indexPath] : self.reviewSizingCell;
 
-    
-    ReviewCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([ReviewCollectionViewCell class])
-                                                                             forIndexPath:indexPath];
-    
     [cell.profileImage sd_setImageWithURL:[NSURL URLWithString:self.reviewUser.profileImageUrl]
-                      placeholderImage:[UIImage imageNamed:@"dish-placeholder"]];
+                         placeholderImage:[UIImage imageNamed:@"dish-placeholder"]];
     
     [cell.rating sd_setImageWithURL:[NSURL URLWithString:@"https://i.stack.imgur.com/sGnY4.jpg"]];
     cell.ratingDescription.text = self.review.description;
@@ -122,16 +147,10 @@ static NSString * const reuseIdentifier = @"Cell";
     cell.layer.shadowOpacity = 1.0f;
     cell.layer.masksToBounds = NO;
     cell.layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:cell.bounds cornerRadius:cell.contentView.layer.cornerRadius].CGPath;
-
+    
+    [cell setCellWidth:375.0f];
+    
     return cell;
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.section == 0) {
-        return CGSizeMake(375, 250);
-    }
-    return CGSizeMake(375, 120);
 }
 
 #pragma mark <UICollectionViewDelegate>

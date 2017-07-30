@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *ratingDescription;
 @property (weak, nonatomic) IBOutlet UIImageView *rating;
 
+- (void)setCellWidth:(CGFloat)width;
+
 @end

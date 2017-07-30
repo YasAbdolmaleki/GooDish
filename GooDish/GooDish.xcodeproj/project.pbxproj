@@ -25,6 +25,8 @@
 		0F6E13A21F0F3F0000280E3C /* DishHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F6E139E1F0F3F0000280E3C /* DishHeaderCollectionViewCell.xib */; };
 		0F6E13A31F0F3F0000280E3C /* DishHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F6E139E1F0F3F0000280E3C /* DishHeaderCollectionViewCell.xib */; };
 		0F6E13A41F0F3F0000280E3C /* DishHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F6E139E1F0F3F0000280E3C /* DishHeaderCollectionViewCell.xib */; };
+		0FB20F011F2E26CE00973DEC /* dishes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FB20EFF1F2E26CE00973DEC /* dishes.json */; };
+		0FB20F021F2E26CE00973DEC /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FB20F001F2E26CE00973DEC /* reviews.json */; };
 		0FE5E9101EF9FB7500E09EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E90F1EF9FB7500E09EC9 /* main.m */; };
 		0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9121EF9FB7500E09EC9 /* AppDelegate.m */; };
 		0FE5E9161EF9FB7500E09EC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9151EF9FB7500E09EC9 /* ViewController.m */; };
@@ -45,12 +47,6 @@
 		0FE5E9511EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E94D1EFA008C00E09EC9 /* DishCollectionViewCell.xib */; };
 		0FE5E9521EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E94D1EFA008C00E09EC9 /* DishCollectionViewCell.xib */; };
 		0FE5E9531EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E94D1EFA008C00E09EC9 /* DishCollectionViewCell.xib */; };
-		0FE5E9561EFA154300E09EC9 /* dishes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9541EFA154300E09EC9 /* dishes.json */; };
-		0FE5E9571EFA154300E09EC9 /* dishes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9541EFA154300E09EC9 /* dishes.json */; };
-		0FE5E9581EFA154300E09EC9 /* dishes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9541EFA154300E09EC9 /* dishes.json */; };
-		0FE5E9591EFA154300E09EC9 /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9551EFA154300E09EC9 /* reviews.json */; };
-		0FE5E95A1EFA154300E09EC9 /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9551EFA154300E09EC9 /* reviews.json */; };
-		0FE5E95B1EFA154300E09EC9 /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9551EFA154300E09EC9 /* reviews.json */; };
 		0FE5E9991EFA1FC600E09EC9 /* Dish.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9981EFA1FC600E09EC9 /* Dish.m */; };
 		0FE5E99A1EFA1FC600E09EC9 /* Dish.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9981EFA1FC600E09EC9 /* Dish.m */; };
 		0FE5E99B1EFA1FC600E09EC9 /* Dish.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9981EFA1FC600E09EC9 /* Dish.m */; };
@@ -129,6 +125,8 @@
 		0F6E139C1F0F3F0000280E3C /* DishHeaderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishHeaderCollectionViewCell.h; sourceTree = "<group>"; };
 		0F6E139D1F0F3F0000280E3C /* DishHeaderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishHeaderCollectionViewCell.m; sourceTree = "<group>"; };
 		0F6E139E1F0F3F0000280E3C /* DishHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DishHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		0FB20EFF1F2E26CE00973DEC /* dishes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dishes.json; sourceTree = "<group>"; };
+		0FB20F001F2E26CE00973DEC /* reviews.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reviews.json; sourceTree = "<group>"; };
 		0FE5E90B1EF9FB7500E09EC9 /* GooDish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooDish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE5E90F1EF9FB7500E09EC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FE5E9111EF9FB7500E09EC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -151,8 +149,6 @@
 		0FE5E94B1EFA008C00E09EC9 /* DishCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishCollectionViewCell.h; sourceTree = "<group>"; };
 		0FE5E94C1EFA008C00E09EC9 /* DishCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishCollectionViewCell.m; sourceTree = "<group>"; };
 		0FE5E94D1EFA008C00E09EC9 /* DishCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DishCollectionViewCell.xib; sourceTree = "<group>"; };
-		0FE5E9541EFA154300E09EC9 /* dishes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = dishes.json; path = ../../../../Desktop/dishes.json; sourceTree = "<group>"; };
-		0FE5E9551EFA154300E09EC9 /* reviews.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = reviews.json; path = ../../../../Desktop/reviews.json; sourceTree = "<group>"; };
 		0FE5E9971EFA1FC600E09EC9 /* Dish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dish.h; sourceTree = "<group>"; };
 		0FE5E9981EFA1FC600E09EC9 /* Dish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dish.m; sourceTree = "<group>"; };
 		0FE5E9A41EFB139D00E09EC9 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
@@ -290,8 +286,8 @@
 		0FE5E95C1EFA188200E09EC9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0FE5E9541EFA154300E09EC9 /* dishes.json */,
-				0FE5E9551EFA154300E09EC9 /* reviews.json */,
+				0FB20EFF1F2E26CE00973DEC /* dishes.json */,
+				0FB20F001F2E26CE00973DEC /* reviews.json */,
 				0FE5E9971EFA1FC600E09EC9 /* Dish.h */,
 				0FE5E9981EFA1FC600E09EC9 /* Dish.m */,
 				0FE5E9A41EFB139D00E09EC9 /* Restaurant.h */,
@@ -493,16 +489,16 @@
 				0FE5E9C81F03357C00E09EC9 /* Dish_iPhone.storyboard in Resources */,
 				0FE5E91E1EF9FB7500E09EC9 /* LaunchScreen.storyboard in Resources */,
 				0FE5E9431EF9FDBD00E09EC9 /* SearchDishes_iPhone.storyboard in Resources */,
+				0FB20F011F2E26CE00973DEC /* dishes.json in Resources */,
 				0FE5E9BF1EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */,
 				0FE5E9D91F04966C00E09EC9 /* ReviewCollectionViewCell.xib in Resources */,
 				0FE5E91B1EF9FB7500E09EC9 /* Assets.xcassets in Resources */,
-				0FE5E9561EFA154300E09EC9 /* dishes.json in Resources */,
 				0F4373D41F0F185600632C5E /* Profile_iPhone.storyboard in Resources */,
 				0FE5E9191EF9FB7500E09EC9 /* Main.storyboard in Resources */,
 				0F6E13A21F0F3F0000280E3C /* DishHeaderCollectionViewCell.xib in Resources */,
 				0F4373DD1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib in Resources */,
-				0FE5E9591EFA154300E09EC9 /* reviews.json in Resources */,
 				0FE5E9511EFA008C00E09EC9 /* DishCollectionViewCell.xib in Resources */,
+				0FB20F021F2E26CE00973DEC /* reviews.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,8 +507,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F6E13A31F0F3F0000280E3C /* DishHeaderCollectionViewCell.xib in Resources */,
-				0FE5E9571EFA154300E09EC9 /* dishes.json in Resources */,
-				0FE5E95A1EFA154300E09EC9 /* reviews.json in Resources */,
 				0FE5E9C01EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */,
 				0F4373DE1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib in Resources */,
 				0F4373D51F0F185600632C5E /* Profile_iPhone.storyboard in Resources */,
@@ -528,8 +522,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F6E13A41F0F3F0000280E3C /* DishHeaderCollectionViewCell.xib in Resources */,
-				0FE5E9581EFA154300E09EC9 /* dishes.json in Resources */,
-				0FE5E95B1EFA154300E09EC9 /* reviews.json in Resources */,
 				0FE5E9C11EFE96E700E09EC9 /* SearchCollectionViewCell.xib in Resources */,
 				0F4373DF1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.xib in Resources */,
 				0F4373D61F0F185600632C5E /* Profile_iPhone.storyboard in Resources */,

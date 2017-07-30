@@ -13,7 +13,7 @@
         <scene sceneID="YNz-8T-aV3">
             <objects>
                 <collectionViewController storyboardIdentifier="DishCollectionViewController" id="Wb0-uU-6Ci" customClass="DishCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="jgX-A9-wcc">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jgX-A9-wcc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
@@ -29,6 +29,9 @@
                             <outlet property="delegate" destination="Wb0-uU-6Ci" id="0lN-V3-Huy"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <outlet property="dishCollectionView" destination="jgX-A9-wcc" id="M8m-Jh-4Sv"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLL-6X-JEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
