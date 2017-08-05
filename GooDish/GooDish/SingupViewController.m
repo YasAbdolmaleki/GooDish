@@ -8,7 +8,7 @@
 
 #import "SingupViewController.h"
 #import <Google/SignIn.h>
-
+#import "NewReviewFormCollectionViewController.h"
 @interface SingupViewController () <GIDSignInUIDelegate>
 
 @property (weak, nonatomic) IBOutlet GIDSignInButton *signInButton;
@@ -53,6 +53,10 @@
         // Signed in
         self.signInButton.hidden = YES;
         self.signOutButton.hidden = NO;
+        NewReviewFormCollectionViewController *newReviewFormCollectionViewController = [[NewReviewFormCollectionViewController alloc] init];
+        UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"NewReviewForm_iPhone" bundle:nil];
+        newReviewFormCollectionViewController = [storyboard instantiateViewControllerWithIdentifier:@"NewReviewFormCollectionViewController"];
+        [self.navigationController pushViewController:newReviewFormCollectionViewController animated:YES];
     }
 }
 
