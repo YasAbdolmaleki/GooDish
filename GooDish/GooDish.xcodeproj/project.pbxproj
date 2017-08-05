@@ -17,7 +17,6 @@
 		0FB20F021F2E26CE00973DEC /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FB20F001F2E26CE00973DEC /* reviews.json */; };
 		0FE5E9101EF9FB7500E09EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E90F1EF9FB7500E09EC9 /* main.m */; };
 		0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9121EF9FB7500E09EC9 /* AppDelegate.m */; };
-		0FE5E9161EF9FB7500E09EC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5E9151EF9FB7500E09EC9 /* ViewController.m */; };
 		0FE5E9191EF9FB7500E09EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9171EF9FB7500E09EC9 /* Main.storyboard */; };
 		0FE5E91B1EF9FB7500E09EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E91A1EF9FB7500E09EC9 /* Assets.xcassets */; };
 		0FE5E91E1EF9FB7500E09EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E91C1EF9FB7500E09EC9 /* LaunchScreen.storyboard */; };
@@ -121,8 +120,6 @@
 		0FE5E90F1EF9FB7500E09EC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FE5E9111EF9FB7500E09EC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0FE5E9121EF9FB7500E09EC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0FE5E9141EF9FB7500E09EC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0FE5E9151EF9FB7500E09EC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0FE5E9181EF9FB7500E09EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FE5E91A1EF9FB7500E09EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FE5E91D1EF9FB7500E09EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -237,8 +234,6 @@
 				0FE5E9411EF9FD6400E09EC9 /* searchDishes */,
 				0FE5E9111EF9FB7500E09EC9 /* AppDelegate.h */,
 				0FE5E9121EF9FB7500E09EC9 /* AppDelegate.m */,
-				0FE5E9141EF9FB7500E09EC9 /* ViewController.h */,
-				0FE5E9151EF9FB7500E09EC9 /* ViewController.m */,
 				0FE5E9171EF9FB7500E09EC9 /* Main.storyboard */,
 				0FE5E91A1EF9FB7500E09EC9 /* Assets.xcassets */,
 				0FE5E91C1EF9FB7500E09EC9 /* LaunchScreen.storyboard */,
@@ -688,7 +683,6 @@
 				0FE5E9481EF9FDEA00E09EC9 /* DishesCollectionViewController.m in Sources */,
 				0FE5E9B01EFB26AF00E09EC9 /* Review.m in Sources */,
 				0FE5E9AB1EFB13F800E09EC9 /* DishReview.m in Sources */,
-				0FE5E9161EF9FB7500E09EC9 /* ViewController.m in Sources */,
 				0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */,
 				0FF47EEC1F3616F9009BA21A /* SingupViewController.m in Sources */,
 				0FF47EF91F3667EE009BA21A /* ReviewFieldCollectionViewCell.m in Sources */,
