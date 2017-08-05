@@ -57,11 +57,10 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (void)fetchReviews {
-    
-    NSString *reviewsJsonRaw = [[NSBundle mainBundle] pathForResource:@"reviews" ofType:@"json"];
-    NSData *reviewsData = [NSData dataWithContentsOfFile:reviewsJsonRaw];
-    
-    NSDictionary *reviewsJsonParsed = [NSJSONSerialization JSONObjectWithData:reviewsData options:kNilOptions error:nil];
+    NSError *error;
+    NSURL *url = [NSURL URLWithString:@"https://firebasestorage.googleapis.com/v0/b/goodish-e4f32.appspot.com/o/reviews.json?alt=media&token=5340dab3-ebb3-48bf-aec2-806f2324a733"];
+    NSData *reviewsData = [[NSData alloc] initWithContentsOfURL:url];
+    NSDictionary *reviewsJsonParsed = [NSJSONSerialization JSONObjectWithData:reviewsData options:0 error:&error];
     NSArray *reviews = [[NSArray alloc] initWithArray:[reviewsJsonParsed objectForKey:@"reviews"]];
     
     self.reviews = reviews;

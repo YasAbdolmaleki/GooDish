@@ -70,10 +70,10 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)fetchDishes:(NSString *)searchedDish {
     
-    NSString *dishesJsonRaw = [[NSBundle mainBundle] pathForResource:@"dishes" ofType:@"json"];
-    NSData *dishesData = [NSData dataWithContentsOfFile:dishesJsonRaw];
-    
-    NSDictionary *dishesJsonParsed = [NSJSONSerialization JSONObjectWithData:dishesData options:kNilOptions error:nil];
+    NSError *error;
+    NSURL *url = [NSURL URLWithString:@"https://firebasestorage.googleapis.com/v0/b/goodish-e4f32.appspot.com/o/dishes.json?alt=media&token=b22ed84c-5b1d-4e48-a6ba-0277c1551109"];
+    NSData *dishesData = [[NSData alloc] initWithContentsOfURL:url];
+    NSDictionary *dishesJsonParsed = [NSJSONSerialization JSONObjectWithData:dishesData options:0 error:&error];
     NSArray *dishes = [[NSArray alloc] initWithArray:[dishesJsonParsed objectForKey:@"dishes"]];
     
     self.dishes = dishes;
