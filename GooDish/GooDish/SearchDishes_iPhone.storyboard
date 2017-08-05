@@ -13,8 +13,8 @@
         <scene sceneID="kG9-k7-DFH">
             <objects>
                 <collectionViewController storyboardIdentifier="DishesCollectionViewController" title="Search" id="ylK-qD-Dhx" userLabel="Dishes Collection View Controller" customClass="DishesCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="ei9-F8-6ni">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ei9-F8-6ni">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bfA-NH-Gpb">
@@ -29,6 +29,8 @@
                             <outlet property="delegate" destination="ylK-qD-Dhx" id="NYf-hv-ak5"/>
                         </connections>
                     </collectionView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGH-Bg-ZlD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,8 +11,6 @@
 #import "DishCollectionViewCell.h"
 #import "ReviewCollectionViewCell.h"
 
-#import "ProfileCollectionViewController.h"
-
 #import "Restaurant.h"
 #import "DishReview.h"
 #import "Dish.h"
@@ -166,26 +164,6 @@ static NSString * const reuseIdentifier = @"Cell";
     [cell setCellWidth:375.0f];
     
     return cell;
-}
-
-#pragma mark <UICollectionViewDelegate>
-
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (indexPath.section == 1) {
-        
-        ProfileCollectionViewController *profileCollectionViewController = [[ProfileCollectionViewController alloc] init];
-        
-        UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Profile_iPhone" bundle:nil];
-        
-        profileCollectionViewController = [storyboard instantiateViewControllerWithIdentifier:@"ProfileCollectionViewController"];
-        
-        [self.navigationController pushViewController:profileCollectionViewController animated:YES];
-        
-    }
-    
-    return NO;
-    
 }
 
 @end
