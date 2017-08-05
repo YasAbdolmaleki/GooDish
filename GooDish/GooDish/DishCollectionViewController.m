@@ -41,7 +41,23 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
+    [self setupNavigationBar];
     [self fetchReviews];
+}
+
+- (void)setupNavigationBar {
+    UIBarButtonItem *addReview = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"add-review"]
+                                                                            imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                                     style:UIBarButtonItemStylePlain
+                                                                    target:self
+                                                                    action:@selector(addReview)];
+    self.navigationItem.rightBarButtonItem = addReview;
+}
+
+- (void)addReview {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Singup_iPhone" bundle:nil];
+    UICollectionViewController *dishesCVC = [storyboard instantiateViewControllerWithIdentifier:@"SingupViewController"];
+    [self.navigationController pushViewController:dishesCVC animated:YES];
 }
 
 - (void)setupView {

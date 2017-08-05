@@ -80,6 +80,9 @@
 		0FE5E9D91F04966C00E09EC9 /* ReviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9D51F04966C00E09EC9 /* ReviewCollectionViewCell.xib */; };
 		0FE5E9DA1F04966C00E09EC9 /* ReviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9D51F04966C00E09EC9 /* ReviewCollectionViewCell.xib */; };
 		0FE5E9DB1F04966C00E09EC9 /* ReviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE5E9D51F04966C00E09EC9 /* ReviewCollectionViewCell.xib */; };
+		0FF47EE91F36148C009BA21A /* Singup_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF47EE81F36148C009BA21A /* Singup_iPhone.storyboard */; };
+		0FF47EEC1F3616F9009BA21A /* SingupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF47EEB1F3616F9009BA21A /* SingupViewController.m */; };
+		0FF47EEE1F361A3C009BA21A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FF47EED1F361A3C009BA21A /* GoogleService-Info.plist */; };
 		1663DBAB300E11BE23A7FF07 /* libPods-GooDishTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EA98BF2AD8C40828B84044 /* libPods-GooDishTests.a */; };
 		3BBE55BEF35AD8E746689D70 /* libPods-GooDish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D4DCAFEB79A27D5FB81FDB /* libPods-GooDish.a */; };
 		D084EC8FC945CAB66120B868 /* libPods-GooDishUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F892DEE3607259D38EFC160 /* libPods-GooDishUITests.a */; };
@@ -168,6 +171,10 @@
 		0FE5E9D31F04966C00E09EC9 /* ReviewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewCollectionViewCell.h; sourceTree = "<group>"; };
 		0FE5E9D41F04966C00E09EC9 /* ReviewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewCollectionViewCell.m; sourceTree = "<group>"; };
 		0FE5E9D51F04966C00E09EC9 /* ReviewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewCollectionViewCell.xib; sourceTree = "<group>"; };
+		0FF47EE81F36148C009BA21A /* Singup_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Singup_iPhone.storyboard; sourceTree = "<group>"; };
+		0FF47EEA1F3616F9009BA21A /* SingupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingupViewController.h; sourceTree = "<group>"; };
+		0FF47EEB1F3616F9009BA21A /* SingupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingupViewController.m; sourceTree = "<group>"; };
+		0FF47EED1F361A3C009BA21A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		14D4DCAFEB79A27D5FB81FDB /* libPods-GooDish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GooDish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5202DD066EEB408B0DDEEF3A /* Pods-GooDishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooDishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooDishTests/Pods-GooDishTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F892DEE3607259D38EFC160 /* libPods-GooDishUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GooDishUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +248,7 @@
 				0FE5E91A1EF9FB7500E09EC9 /* Assets.xcassets */,
 				0FE5E91C1EF9FB7500E09EC9 /* LaunchScreen.storyboard */,
 				0FE5E91F1EF9FB7500E09EC9 /* Info.plist */,
+				0FF47EED1F361A3C009BA21A /* GoogleService-Info.plist */,
 				0FE5E90E1EF9FB7500E09EC9 /* Supporting Files */,
 			);
 			path = GooDish;
@@ -308,6 +316,7 @@
 				0FE5E9421EF9FDBD00E09EC9 /* SearchDishes_iPhone.storyboard */,
 				0FE5E9C71F03357C00E09EC9 /* Dish_iPhone.storyboard */,
 				0F4373D31F0F185600632C5E /* Profile_iPhone.storyboard */,
+				0FF47EE81F36148C009BA21A /* Singup_iPhone.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -343,6 +352,8 @@
 				0FE5E9C31F03353F00E09EC9 /* DishCollectionViewController.m */,
 				0F4373CE1F0F182B00632C5E /* ProfileCollectionViewController.h */,
 				0F4373CF1F0F182B00632C5E /* ProfileCollectionViewController.m */,
+				0FF47EEA1F3616F9009BA21A /* SingupViewController.h */,
+				0FF47EEB1F3616F9009BA21A /* SingupViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -487,6 +498,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FE5E9C81F03357C00E09EC9 /* Dish_iPhone.storyboard in Resources */,
+				0FF47EE91F36148C009BA21A /* Singup_iPhone.storyboard in Resources */,
+				0FF47EEE1F361A3C009BA21A /* GoogleService-Info.plist in Resources */,
 				0FE5E91E1EF9FB7500E09EC9 /* LaunchScreen.storyboard in Resources */,
 				0FE5E9431EF9FDBD00E09EC9 /* SearchDishes_iPhone.storyboard in Resources */,
 				0FB20F011F2E26CE00973DEC /* dishes.json in Resources */,
@@ -685,6 +698,7 @@
 				0FE5E9161EF9FB7500E09EC9 /* ViewController.m in Sources */,
 				0F4373DA1F0F20BA00632C5E /* ProfileHeaderCollectionViewCell.m in Sources */,
 				0FE5E9131EF9FB7500E09EC9 /* AppDelegate.m in Sources */,
+				0FF47EEC1F3616F9009BA21A /* SingupViewController.m in Sources */,
 				0F4373D01F0F182B00632C5E /* ProfileCollectionViewController.m in Sources */,
 				0FE5E9B51EFB278B00E09EC9 /* ReviewUser.m in Sources */,
 				0FE5E9991EFA1FC600E09EC9 /* Dish.m in Sources */,

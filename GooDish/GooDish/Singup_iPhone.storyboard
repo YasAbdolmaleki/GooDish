@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signup View Controller-->
+        <scene sceneID="mSZ-OV-1Nn">
+            <objects>
+                <viewController storyboardIdentifier="SingupViewController" id="dEa-12-p8v" userLabel="Signup View Controller" customClass="SingupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ya1-tO-mnc"/>
+                        <viewControllerLayoutGuide type="bottom" id="FNt-cl-dH6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gON-Go-Off">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="148-oG-Oeq" userLabel="Status Label">
+                                <rect key="frame" x="26" y="70" width="323" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsi-eg-Brt" customClass="GIDSignInButton">
+                                <rect key="frame" x="26" y="140.5" width="323" height="139.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puv-uK-xwI" userLabel="Sign Out Button">
+                                <rect key="frame" x="26" y="300" width="323" height="30"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSignOut:" destination="dEa-12-p8v" eventType="touchUpInside" id="AJ1-8U-ApT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="148-oG-Oeq" secondAttribute="trailing" constant="10" id="17f-MH-4T2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vsi-eg-Brt" secondAttribute="trailing" constant="10" id="BYu-6A-OaA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="puv-uK-xwI" secondAttribute="trailing" constant="10" id="IiA-bR-Yzv"/>
+                            <constraint firstItem="vsi-eg-Brt" firstAttribute="top" secondItem="148-oG-Oeq" secondAttribute="bottom" constant="50" id="VXX-au-GdT"/>
+                            <constraint firstItem="puv-uK-xwI" firstAttribute="top" secondItem="vsi-eg-Brt" secondAttribute="bottom" constant="20" id="aC9-oY-azA"/>
+                            <constraint firstItem="148-oG-Oeq" firstAttribute="top" secondItem="Ya1-tO-mnc" secondAttribute="bottom" constant="50" id="ohz-KX-xFB"/>
+                            <constraint firstItem="148-oG-Oeq" firstAttribute="leading" secondItem="gON-Go-Off" secondAttribute="leadingMargin" constant="10" id="uhK-Bk-fd6"/>
+                            <constraint firstItem="vsi-eg-Brt" firstAttribute="leading" secondItem="gON-Go-Off" secondAttribute="leadingMargin" constant="10" id="w6Q-Ro-9Ez"/>
+                            <constraint firstItem="FNt-cl-dH6" firstAttribute="top" secondItem="puv-uK-xwI" secondAttribute="bottom" constant="337" id="zWK-LI-uEK"/>
+                            <constraint firstItem="puv-uK-xwI" firstAttribute="leading" secondItem="gON-Go-Off" secondAttribute="leadingMargin" constant="10" id="zYT-nD-a0F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="vsi-eg-Brt" id="yUG-cn-KzG"/>
+                        <outlet property="signOutButton" destination="puv-uK-xwI" id="JAx-yz-PUf"/>
+                        <outlet property="statusText" destination="148-oG-Oeq" id="xYg-f2-L1t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rax-BQ-vdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="57.121439280359823"/>
+        </scene>
+    </scenes>
+</document>
