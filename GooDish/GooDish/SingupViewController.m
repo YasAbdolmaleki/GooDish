@@ -9,7 +9,7 @@
 #import "SingupViewController.h"
 #import <Google/SignIn.h>
 #import "NewReviewFormCollectionViewController.h"
-@interface SingupViewController () <GIDSignInUIDelegate>
+@interface SingupViewController () <GIDSignInUIDelegate, GIDSignInDelegate>
 
 @property (weak, nonatomic) IBOutlet GIDSignInButton *signInButton;
 @property (weak, nonatomic) IBOutlet UIButton *signOutButton;
@@ -22,11 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // TODO(developer) Configure the sign-in button look/feel
+    GIDSignIn *signin = [GIDSignIn sharedInstance];
+    [signin signOut];
+    signin.delegate = self;
+    signin.uiDelegate = self;
     
-    [GIDSignIn sharedInstance].uiDelegate = self;
-    
-    [[GIDSignIn sharedInstance] signInSilently];
+    //[[GIDSignIn sharedInstance] signInSilently];
+    //[GIDSignIn sharedInstance].currentUser.authentication == nil
     
     [[NSNotificationCenter defaultCenter]
      addObserver:self
@@ -34,30 +36,17 @@
      name:@"ToggleAuthUINotification"
      object:nil];
     
-    [self toggleAuthUI];
     self.statusText.text = @"Google Sign in\niOS Demo";
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    if (!([GIDSignIn sharedInstance].currentUser.authentication == nil)) {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
 }
 
 - (IBAction)didTapSignOut:(id)sender {
     [[GIDSignIn sharedInstance] signOut];
-    [self toggleAuthUI];
-}
-
-- (void)toggleAuthUI {
-    if ([GIDSignIn sharedInstance].currentUser.authentication == nil) {
-        // Not signed in
-        self.statusText.text = @"Google Sign in\niOS Demo";
-        self.signInButton.hidden = NO;
-        self.signOutButton.hidden = YES;
-    } else {
-        // Signed in
-        self.signInButton.hidden = YES;
-        self.signOutButton.hidden = NO;
-        NewReviewFormCollectionViewController *newReviewFormCollectionViewController = [[NewReviewFormCollectionViewController alloc] init];
-        UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"NewReviewForm_iPhone" bundle:nil];
-        newReviewFormCollectionViewController = [storyboard instantiateViewControllerWithIdentifier:@"NewReviewFormCollectionViewController"];
-        [self.navigationController pushViewController:newReviewFormCollectionViewController animated:YES];
-    }
 }
 
 - (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
@@ -65,7 +54,8 @@
     NSString *idToken = user.authentication.idToken; // Safe to send to the server
     NSString *name = user.profile.name;
     NSString *email = user.profile.email;
-    NSLog(@"Customer details: %@ %@ %@ %@", userId, idToken, name, email);
+    NSLog(@"Customer details: %@ \n%@ \n%@ \n%@", userId, idToken, name, email);
+    [self.delegate userSignedIn:YES withController:self];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -80,9 +70,8 @@
     
 }
 
-- (void) receiveToggleAuthUINotification:(NSNotification *) notification {
+- (void)receiveToggleAuthUINotification:(NSNotification *) notification {
     if ([notification.name isEqualToString:@"ToggleAuthUINotification"]) {
-        [self toggleAuthUI];
         self.statusText.text = notification.userInfo[@"statusText"];
     }
 }

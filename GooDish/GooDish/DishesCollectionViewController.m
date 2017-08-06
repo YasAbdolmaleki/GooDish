@@ -9,6 +9,8 @@
 #import "DishesCollectionViewController.h"
 
 #import "DishCollectionViewController.h"
+#import "SingupViewController.h"
+#import "NewReviewFormCollectionViewController.h"
 #import "DishHeaderCollectionViewCell.h"
 #import "SearchCollectionViewCell.h"
 
@@ -18,13 +20,13 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface DishesCollectionViewController ()
+@interface DishesCollectionViewController () <SingupViewControllerDelegate>
 
 @property (nonatomic, strong) NSArray* dishes;
 @property (nonatomic, strong) Dish* currentDish;
 @property (nonatomic, strong) Restaurant* restaurant;
 @property (nonatomic, strong) DishReview* dishReview;
-
+@property (nonatomic) BOOL userSingedIn;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (strong) SearchCollectionViewCell *searchCollectionViewCell;
 
@@ -37,25 +39,50 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
-    [self setupNavigationBar];
     [self fetchDishes:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [self setupNavigationBar];
 }
 
 - (void)setupNavigationBar {
     [[self.navigationController navigationBar] setTintColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:1.0]];
+    
+    NSString *rightButtonImageName = !_userSingedIn ? @"google": @"add-new-review";
+    
+    UIBarButtonItem *navRightButton = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:rightButtonImageName]
+                                                                                  imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                                           style:UIBarButtonItemStylePlain
+                                                                          target:self
+                                                                          action:@selector(setupViewController)];
+    self.navigationItem.rightBarButtonItem = navRightButton;
+}
 
-    UIBarButtonItem *addNewReview = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"add-new-review"]
-                                                                            imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
-                                                                     style:UIBarButtonItemStylePlain
-                                                                    target:self
-                                                                    action:@selector(addNewReview)];
-    self.navigationItem.rightBarButtonItem = addNewReview;
+- (void)setupViewController {
+    if (!_userSingedIn) {
+        [self singup];
+    } else {
+        [self addNewReview];
+    }
+}
+- (void)singup {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Singup_iPhone" bundle:nil];
+    SingupViewController *singupVC = [storyboard instantiateViewControllerWithIdentifier:@"SingupViewController"];
+    singupVC.delegate = self;
+    [self.navigationController pushViewController:singupVC animated:YES];
 }
 
 - (void)addNewReview {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Singup_iPhone" bundle:nil];
-    UICollectionViewController *dishesCVC = [storyboard instantiateViewControllerWithIdentifier:@"SingupViewController"];
-    [self.navigationController pushViewController:dishesCVC animated:YES];
+    NewReviewFormCollectionViewController *newReviewFormCollectionViewController = [[NewReviewFormCollectionViewController alloc] init];
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"NewReviewForm_iPhone" bundle:nil];
+    newReviewFormCollectionViewController = [storyboard instantiateViewControllerWithIdentifier:@"NewReviewFormCollectionViewController"];
+    [self.navigationController pushViewController:newReviewFormCollectionViewController animated:YES];
+}
+
+- (void)userSignedIn:(BOOL)signedIn withController:(UIViewController *)controller{
+    _userSingedIn = signedIn;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)setupView {

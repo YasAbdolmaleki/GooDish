@@ -8,6 +8,9 @@
 
 #import "DishCollectionViewController.h"
 
+#import "NewReviewFormCollectionViewController.h"
+#import "SingupViewController.h"
+
 #import "DishCollectionViewCell.h"
 #import "ReviewCollectionViewCell.h"
 
@@ -19,7 +22,7 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface DishCollectionViewController ()
+@interface DishCollectionViewController () <SingupViewControllerDelegate>
 
 @property (nonatomic, strong) Restaurant* restaurant;
 @property (nonatomic, strong) DishReview* dishReview;
@@ -27,6 +30,7 @@
 @property (nonatomic, strong) Review* review;
 @property (nonatomic, strong) ReviewUser* reviewUser;
 @property (nonatomic, strong) ReviewCollectionViewCell *reviewCollectionViewCell;
+@property (nonatomic) BOOL userSingedIn;
 
 @property (strong, nonatomic) IBOutlet UICollectionView *dishCollectionView;
 
@@ -39,23 +43,49 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
-    [self setupNavigationBar];
     [self fetchReviews];
 }
 
-- (void)setupNavigationBar {
-    UIBarButtonItem *addReview = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"add-review"]
-                                                                            imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
-                                                                     style:UIBarButtonItemStylePlain
-                                                                    target:self
-                                                                    action:@selector(addReview)];
-    self.navigationItem.rightBarButtonItem = addReview;
+- (void)viewWillAppear:(BOOL)animated{
+    [self setupNavigationBar];
 }
 
-- (void)addReview {
+- (void)setupNavigationBar {
+    [[self.navigationController navigationBar] setTintColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:1.0]];
+    
+    NSString *rightButtonImageName = !_userSingedIn ? @"google": @"add-review";
+    
+    UIBarButtonItem *navRightButton = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:rightButtonImageName]
+                                                                              imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                                       style:UIBarButtonItemStylePlain
+                                                                      target:self
+                                                                      action:@selector(setupViewController)];
+    self.navigationItem.rightBarButtonItem = navRightButton;
+}
+
+- (void)setupViewController {
+    if (!_userSingedIn) {
+        [self singup];
+    } else {
+        [self addNewReview];
+    }
+}
+- (void)singup {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Singup_iPhone" bundle:nil];
-    UICollectionViewController *dishesCVC = [storyboard instantiateViewControllerWithIdentifier:@"SingupViewController"];
-    [self.navigationController pushViewController:dishesCVC animated:YES];
+    SingupViewController *singupVC = [storyboard instantiateViewControllerWithIdentifier:@"SingupViewController"];
+    singupVC.delegate = self;
+    [self.navigationController pushViewController:singupVC animated:YES];
+}
+
+- (void)addNewReview {
+    NewReviewFormCollectionViewController *newReviewFormCollectionViewController = [[NewReviewFormCollectionViewController alloc] init];
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"NewReviewForm_iPhone" bundle:nil];
+    newReviewFormCollectionViewController = [storyboard instantiateViewControllerWithIdentifier:@"NewReviewFormCollectionViewController"];
+    [self.navigationController pushViewController:newReviewFormCollectionViewController animated:YES];
+}
+
+- (void)userSignedIn:(BOOL)signedIn withController:(UIViewController *)controller{
+    _userSingedIn = signedIn;
 }
 
 - (void)setupView {

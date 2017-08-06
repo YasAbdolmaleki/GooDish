@@ -9,7 +9,7 @@
 #import "NewReviewFormCollectionViewController.h"
 #import "ReviewFieldCollectionViewCell.h"
 
-@interface NewReviewFormCollectionViewController () <UICollectionViewDelegateFlowLayout>
+@interface NewReviewFormCollectionViewController () <UICollectionViewDelegateFlowLayout, UIPickerViewDelegate>
 
 @end
 
@@ -30,6 +30,27 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark <UIPickerViewDelegate>
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView {
+    
+    return 1;//Or return whatever as you intend
+}
+
+- (NSInteger)pickerView:(UIPickerView *)thePickerView numberOfRowsInComponent:(NSInteger)component {
+    
+    return 3;//Or, return as suitable for you...normally we use array for dynamic
+}
+
+- (NSString *)pickerView:(UIPickerView *)thePickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return [NSString stringWithFormat:@"Choice-%ld",(long)row];//Or, your suitable title; like Choice-a, etc.
+}
+
+- (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    //Here, like the table view you can get the each section of each row if you've multiple sections
 }
 
 #pragma mark <UICollectionViewDataSource>
